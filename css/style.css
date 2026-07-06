@@ -1162,3 +1162,29 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
     height: 300px;
   }
 }
+
+.industries-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+.industries-visual-sidebar {
+  position: sticky;
+  top: 130px;
+  width: 100%;
+  height: 450px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--charcoal);
+  overflow: hidden;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.45);
+}
+@media(max-width: 900px) {
+  .industries-layout {
+    grid-template-columns: 1fr;
+  }
+  .industries-visual-sidebar {
+    display: none;
+  }
+}

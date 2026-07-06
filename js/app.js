@@ -64,6 +64,16 @@ window.addEventListener('load', () => {
     // Init WebGL Viewport Observer Engine
     initWebGLObserver();
 
+    // Hook up industries cards hover listeners
+    document.querySelectorAll('.ind-card').forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        const id = card.id.replace('ind-', '');
+        if (typeof window._setIndustriesVisualState === 'function') {
+          window._setIndustriesVisualState(id);
+        }
+      });
+    });
+
     initHeroAnimation();
     initScrollReveal();
     initWorkflow();
@@ -284,6 +294,7 @@ window.addEventListener('load', () => {
     else if (id === 'securityCanvas') setupSecurityShield(activeScenes[id]);
     else if (id === 'aiCanvas') setupNeuralBrain(activeScenes[id]);
     else if (id === 'footerCanvas') setupFooterOrb(activeScenes[id]);
+    else if (id === 'industriesCanvas') setupIndustriesVisuals(activeScenes[id]);
   }
 
   function fallbackScene2D(id) {
@@ -462,7 +473,6 @@ window.addEventListener('load', () => {
     rootGroup.add(browserGroup);
     const bOutline = new THREE.Mesh(new THREE.BoxGeometry(22, 14, 2), new THREE.MeshBasicMaterial({ color: '#00e5ff', wireframe: true, transparent: true, opacity: 0.4 }));
     browserGroup.add(bOutline);
-    // Inner layers
     const bLayer = new THREE.Mesh(new THREE.PlaneGeometry(20, 12), new THREE.MeshBasicMaterial({ color: '#7c3aed', wireframe: true, transparent: true, opacity: 0.15 }));
     bLayer.position.z = 0.5;
     browserGroup.add(bLayer);
@@ -492,7 +502,6 @@ window.addEventListener('load', () => {
       requestAnimationFrame(inst.animate);
       const elapsed = clock.getElapsedTime();
 
-      // Show/Hide depending on active state
       if (activeServiceMesh === 'web' || activeServiceMesh === 'ecom') {
         browserGroup.visible = true;
         phoneGroup.visible = false;
@@ -506,7 +515,6 @@ window.addEventListener('load', () => {
         phoneGroup.rotation.y = elapsed * 0.4;
         phoneGroup.rotation.x = Math.sin(elapsed * 0.8) * 0.2;
       } else {
-        // ERP / Custom Software / Other
         browserGroup.visible = false;
         phoneGroup.visible = false;
         erpGroup.visible = true;
@@ -531,13 +539,11 @@ window.addEventListener('load', () => {
     const galaxy = new THREE.Group();
     scene.add(galaxy);
 
-    // Central pulsing star (ZIBRIN CORE)
     const coreGeom = new THREE.SphereGeometry(6, 12, 12);
     const coreMat = new THREE.MeshBasicMaterial({ color: '#00e5ff', wireframe: true });
     const core = new THREE.Mesh(coreGeom, coreMat);
     galaxy.add(core);
 
-    // Concentric orbits
     const orbits = [16, 26, 36, 46];
     const orbitColors = ['#7c3aed', '#10b981', '#00e5ff', '#7c3aed'];
 
@@ -572,7 +578,6 @@ window.addEventListener('load', () => {
     const pipeGroup = new THREE.Group();
     scene.add(pipeGroup);
 
-    // Pipeline track mesh (Helix)
     const helixPoints = [];
     for (let i = 0; i < 100; i++) {
       const angle = (i / 100) * Math.PI * 8;
@@ -584,7 +589,6 @@ window.addEventListener('load', () => {
     const helixLine = new THREE.Line(pathGeom, pathMat);
     pipeGroup.add(helixLine);
 
-    // Pulsing data packet traversing down the pipeline
     const packetGeom = new THREE.SphereGeometry(0.8, 8, 8);
     const packetMat = new THREE.MeshBasicMaterial({ color: '#00e5ff', wireframe: true });
     const packet = new THREE.Mesh(packetGeom, packetMat);
@@ -597,7 +601,6 @@ window.addEventListener('load', () => {
 
       pipeGroup.rotation.y = elapsed * 0.2;
 
-      // Calculate path traversal position
       const progress = (elapsed * 0.15) % 1;
       const idx = Math.floor(progress * helixPoints.length);
       if (helixPoints[idx]) {
@@ -619,11 +622,9 @@ window.addEventListener('load', () => {
     const seoGroup = new THREE.Group();
     scene.add(seoGroup);
 
-    // Central SEO/AEO/GEO core
     const hub = new THREE.Mesh(new THREE.IcosahedronGeometry(4, 1), new THREE.MeshBasicMaterial({ color: '#00e5ff', wireframe: true }));
     seoGroup.add(hub);
 
-    // Orbiting Satellite Nodes: Google, ChatGPT, Gemini, Perplexity
     const sats = [];
     const colors = ['#7c3aed', '#10b981', '#00e5ff', '#7c3aed'];
     const distances = [12, 18, 24, 30];
@@ -666,7 +667,6 @@ window.addEventListener('load', () => {
     const cloudGroup = new THREE.Group();
     scene.add(cloudGroup);
 
-    // Floating server stack layers (boxes)
     const servers = [];
     for(let i=0; i<3; i++) {
       const box = new THREE.Mesh(new THREE.BoxGeometry(16, 2.5, 10), new THREE.MeshBasicMaterial({ color: '#7c3aed', wireframe: true, transparent: true, opacity: 0.3 }));
@@ -700,11 +700,9 @@ window.addEventListener('load', () => {
     const secGroup = new THREE.Group();
     scene.add(secGroup);
 
-    // Central secure database node
     const dbCore = new THREE.Mesh(new THREE.CylinderGeometry(3, 3, 6, 8), new THREE.MeshBasicMaterial({ color: '#10b981', wireframe: true }));
     secGroup.add(dbCore);
 
-    // Digital rotating firewall shield dome
     const shield = new THREE.Mesh(new THREE.SphereGeometry(10, 16, 16, 0, Math.PI*2, 0, Math.PI*0.5), new THREE.MeshBasicMaterial({ color: '#00e5ff', wireframe: true, transparent: true, opacity: 0.2 }));
     shield.rotation.x = Math.PI * 0.55;
     secGroup.add(shield);
@@ -733,14 +731,12 @@ window.addEventListener('load', () => {
     const brainGroup = new THREE.Group();
     scene.add(brainGroup);
 
-    // Volumetric node sphere representing brain
     const nodeCount = 140;
     const geometry = new THREE.BufferGeometry();
     const positions = new Float32Array(nodeCount * 3);
     const nodes = [];
 
     for(let i=0; i<nodeCount; i++) {
-      // Shape brain hemispheres (left/right spheres)
       const isLeft = Math.random() > 0.5;
       const offsetX = isLeft ? -3.5 : 3.5;
       const r = Math.random() * 7;
@@ -758,7 +754,6 @@ window.addEventListener('load', () => {
     const points = new THREE.Points(geometry, mat);
     brainGroup.add(points);
 
-    // Connect nodes via synapse line grids
     const lineMat = new THREE.LineBasicMaterial({ color: '#00e5ff', transparent: true, opacity: 0.1 });
     const lineGeom = new THREE.BufferGeometry();
     const lines = new THREE.LineSegments(lineGeom, lineMat);
@@ -771,7 +766,6 @@ window.addEventListener('load', () => {
 
       brainGroup.rotation.y = elapsed * 0.08;
 
-      // Animate line synapse segment connection updates
       const linePositions = [];
       for(let i=0; i<nodeCount; i+=2) {
         for(let j=i+1; j<nodeCount; j+=3) {
@@ -825,6 +819,141 @@ window.addEventListener('load', () => {
         posAttr.setXYZ(i, ox + displacement, oy + displacement, oz + displacement);
       }
       posAttr.needsUpdate = true;
+
+      renderer.render(scene, camera);
+    };
+    inst.animate();
+  }
+
+  /* ══════════════════════════════════════
+     15b. INDUSTRIES VISUALS (Morphing Canvas)
+  ══════════════════════════════════════ */
+  let activeIndustryMesh = 'health';
+  window._setIndustriesVisualState = function(state) {
+    activeIndustryMesh = state;
+  };
+
+  function setupIndustriesVisuals(inst) {
+    const { scene, camera, renderer, clock } = inst;
+    camera.position.set(0, 0, 50);
+
+    const rootGroup = new THREE.Group();
+    scene.add(rootGroup);
+
+    // 1. Healthcare: DNA helix
+    const dnaGroup = new THREE.Group();
+    rootGroup.add(dnaGroup);
+    const dnaNodes = [];
+    for(let i=0; i<15; i++) {
+      const angle = (i / 15) * Math.PI * 4;
+      const y = (i / 15) * 20 - 10;
+      
+      const s1 = new THREE.Mesh(new THREE.SphereGeometry(0.8, 8, 8), new THREE.MeshBasicMaterial({ color: '#00e5ff', wireframe: true }));
+      s1.position.set(Math.cos(angle)*5, y, Math.sin(angle)*5);
+      dnaGroup.add(s1);
+      
+      const s2 = new THREE.Mesh(new THREE.SphereGeometry(0.8, 8, 8), new THREE.MeshBasicMaterial({ color: '#7c3aed', wireframe: true }));
+      s2.position.set(Math.cos(angle + Math.PI)*5, y, Math.sin(angle + Math.PI)*5);
+      dnaGroup.add(s2);
+
+      // connector bar
+      const barGeom = new THREE.BoxGeometry(0.1, 0.1, 10);
+      const barMat = new THREE.MeshBasicMaterial({ color: '#10b981', transparent: true, opacity: 0.3 });
+      const bar = new THREE.Mesh(barGeom, barMat);
+      bar.position.set(0, y, 0);
+      bar.rotation.y = -angle;
+      dnaGroup.add(bar);
+    }
+
+    // 2. E-Commerce: Shopping podium
+    const ecomGroup = new THREE.Group();
+    rootGroup.add(ecomGroup);
+    const podium = new THREE.Mesh(new THREE.CylinderGeometry(8, 9, 2, 16), new THREE.MeshBasicMaterial({ color: '#7c3aed', wireframe: true }));
+    podium.position.y = -8;
+    ecomGroup.add(podium);
+    const product = new THREE.Mesh(new THREE.IcosahedronGeometry(4, 1), new THREE.MeshBasicMaterial({ color: '#00e5ff', wireframe: true }));
+    product.position.y = 2;
+    ecomGroup.add(product);
+
+    // 3. FinTech: Candlestick chart
+    const finGroup = new THREE.Group();
+    rootGroup.add(finGroup);
+    const wicks = [];
+    for(let i=0; i<4; i++) {
+      const bar = new THREE.Mesh(new THREE.BoxGeometry(2, 6 + i*2, 2), new THREE.MeshBasicMaterial({ color: i%2===0?'#10b981':'#ef4444', wireframe: true }));
+      bar.position.set((i - 1.5)*6, Math.sin(i)*2, 0);
+      finGroup.add(bar);
+      wicks.push(bar);
+    }
+
+    // 4. Education: Open Book + Planet
+    const eduGroup = new THREE.Group();
+    rootGroup.add(eduGroup);
+    const book = new THREE.Mesh(new THREE.BoxGeometry(18, 1, 12), new THREE.MeshBasicMaterial({ color: '#7c3aed', wireframe: true }));
+    book.rotation.x = 0.2;
+    book.position.y = -5;
+    eduGroup.add(book);
+    const planet = new THREE.Mesh(new THREE.SphereGeometry(3, 8, 8), new THREE.MeshBasicMaterial({ color: '#00e5ff', wireframe: true }));
+    planet.position.y = 4;
+    eduGroup.add(planet);
+
+    // 5. Real Estate: Skyscraper
+    const estateGroup = new THREE.Group();
+    rootGroup.add(estateGroup);
+    const tower = new THREE.Mesh(new THREE.BoxGeometry(6, 18, 6), new THREE.MeshBasicMaterial({ color: '#00e5ff', wireframe: true }));
+    estateGroup.add(tower);
+
+    // 6. Logistics / Travel: Globe
+    const travelGroup = new THREE.Group();
+    rootGroup.add(travelGroup);
+    const globe = new THREE.Mesh(new THREE.SphereGeometry(8, 12, 12), new THREE.MeshBasicMaterial({ color: '#7c3aed', wireframe: true }));
+    travelGroup.add(globe);
+
+    // 7. Manufacturing: Robot arm
+    const mfgGroup = new THREE.Group();
+    rootGroup.add(mfgGroup);
+    const base = new THREE.Mesh(new THREE.BoxGeometry(4, 2, 4), new THREE.MeshBasicMaterial({ color: '#10b981', wireframe: true }));
+    base.position.y = -8;
+    mfgGroup.add(base);
+    const arm = new THREE.Mesh(new THREE.CylinderGeometry(0.8, 0.8, 12), new THREE.MeshBasicMaterial({ color: '#00e5ff', wireframe: true }));
+    arm.position.set(0, -2, 0);
+    arm.rotation.z = 0.5;
+    mfgGroup.add(arm);
+
+    inst.animate = function() {
+      if (!inst.running) return;
+      requestAnimationFrame(inst.animate);
+      const elapsed = clock.getElapsedTime();
+
+      // Show/Hide active mesh
+      dnaGroup.visible = activeIndustryMesh === 'health';
+      ecomGroup.visible = activeIndustryMesh === 'ecom';
+      finGroup.visible = activeIndustryMesh === 'fin';
+      eduGroup.visible = activeIndustryMesh === 'edu';
+      estateGroup.visible = activeIndustryMesh === 'estate';
+      travelGroup.visible = activeIndustryMesh === 'log' || activeIndustryMesh === 'travel';
+      mfgGroup.visible = activeIndustryMesh === 'mfg';
+
+      // Perform animations depending on active selection
+      if (activeIndustryMesh === 'health') {
+        dnaGroup.rotation.y = elapsed * 0.8;
+      } else if (activeIndustryMesh === 'ecom') {
+        product.rotation.y = elapsed * 0.6;
+        product.position.y = 2 + Math.sin(elapsed * 2.0) * 0.6;
+      } else if (activeIndustryMesh === 'fin') {
+        wicks.forEach((w, idx) => {
+          w.position.y = Math.sin(elapsed * 2.5 + idx) * 1.5;
+        });
+      } else if (activeIndustryMesh === 'edu') {
+        planet.rotation.y = elapsed * 0.4;
+        planet.position.y = 4 + Math.sin(elapsed * 1.5) * 0.5;
+      } else if (activeIndustryMesh === 'estate') {
+        tower.rotation.y = elapsed * 0.2;
+      } else if (activeIndustryMesh === 'log' || activeIndustryMesh === 'travel') {
+        globe.rotation.y = elapsed * 0.3;
+      } else if (activeIndustryMesh === 'mfg') {
+        arm.rotation.z = 0.5 + Math.sin(elapsed * 2.0) * 0.25;
+      }
 
       renderer.render(scene, camera);
     };
@@ -1199,7 +1328,6 @@ window.addEventListener('load', () => {
       btn.style.background = '#10b981';
       btn.style.pointerEvents = 'none';
 
-      // Animate energy pulses traveling into Zibrin core upon submit
       if (typeof window._triggerSynapsePulse === 'function') {
         window._triggerSynapsePulse();
       }

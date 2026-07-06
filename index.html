@@ -1148,15 +1148,22 @@
               <span class="ind-pill">Healthcare</span><span class="ind-pill">E-Commerce</span><span class="ind-pill">FinTech</span><span class="ind-pill">Education</span><span class="ind-pill">Real Estate</span><span class="ind-pill">Logistics</span><span class="ind-pill">Manufacturing</span><span class="ind-pill">Hospitality</span><span class="ind-pill">Legal Tech</span><span class="ind-pill">Retail</span><span class="ind-pill">InsurTech</span><span class="ind-pill">PropTech</span>
             </div>
           </div>
-          <div class="industries-grid">
-            <div class="ind-card" data-reveal data-tilt><div class="ind-icon">🏥</div><div class="ind-info"><h4>Healthcare</h4><p>EMR systems, telemedicine, AI diagnostics, patient portals</p></div></div>
-            <div class="ind-card" data-reveal data-tilt><div class="ind-icon">🛒</div><div class="ind-info"><h4>E-Commerce</h4><p>Storefronts, marketplaces, inventory, AI recommendations</p></div></div>
-            <div class="ind-card" data-reveal data-tilt><div class="ind-icon">💳</div><div class="ind-info"><h4>FinTech</h4><p>Payment platforms, banking apps, investment tools, KYC</p></div></div>
-            <div class="ind-card" data-reveal data-tilt><div class="ind-icon">📚</div><div class="ind-info"><h4>Education</h4><p>LMS, e-learning, virtual classrooms, student portals</p></div></div>
-            <div class="ind-card" data-reveal data-tilt><div class="ind-icon">🏢</div><div class="ind-info"><h4>Real Estate</h4><p>Property listings, CRM, virtual tours, agent platforms</p></div></div>
-            <div class="ind-card" data-reveal data-tilt><div class="ind-icon">🚚</div><div class="ind-info"><h4>Logistics</h4><p>Fleet tracking, route optimisation, warehouse management</p></div></div>
-            <div class="ind-card" data-reveal data-tilt><div class="ind-icon">🏭</div><div class="ind-info"><h4>Manufacturing</h4><p>ERP, production planning, quality control, IoT integration</p></div></div>
-            <div class="ind-card" data-reveal data-tilt><div class="ind-icon">⚖️</div><div class="ind-info"><h4>Legal Tech</h4><p>Case management, document automation, client portals</p></div></div>
+          <div class="industries-layout">
+            <div class="industries-grid">
+              <div class="ind-card" id="ind-health" data-reveal data-tilt><div class="ind-icon">🏥</div><div class="ind-info"><h4>Healthcare</h4><p>EMR systems, telemedicine, AI diagnostics, patient portals</p></div></div>
+              <div class="ind-card" id="ind-ecom" data-reveal data-tilt><div class="ind-icon">🛒</div><div class="ind-info"><h4>E-Commerce</h4><p>Storefronts, marketplaces, inventory, AI recommendations</p></div></div>
+              <div class="ind-card" id="ind-fin" data-reveal data-tilt><div class="ind-icon">💳</div><div class="ind-info"><h4>FinTech</h4><p>Payment platforms, banking apps, investment tools, KYC</p></div></div>
+              <div class="ind-card" id="ind-edu" data-reveal data-tilt><div class="ind-icon">📚</div><div class="ind-info"><h4>Education</h4><p>LMS, e-learning, virtual classrooms, student portals</p></div></div>
+              <div class="ind-card" id="ind-estate" data-reveal data-tilt><div class="ind-icon">🏢</div><div class="ind-info"><h4>Real Estate</h4><p>Property listings, CRM, virtual tours, agent platforms</p></div></div>
+              <div class="ind-card" id="ind-log" data-reveal data-tilt><div class="ind-icon">🚚</div><div class="ind-info"><h4>Logistics</h4><p>Fleet tracking, route optimisation, warehouse management</p></div></div>
+              <div class="ind-card" id="ind-mfg" data-reveal data-tilt><div class="ind-icon">🏭</div><div class="ind-info"><h4>Manufacturing</h4><p>ERP, production planning, quality control, IoT integration</p></div></div>
+              <div class="ind-card" id="ind-travel" data-reveal data-tilt><div class="ind-icon">✈️</div><div class="ind-info"><h4>Travel & Globe</h4><p>Interactive booking, navigation, globally scaled systems</p></div></div>
+            </div>
+            <div class="industries-visual-sidebar" aria-hidden="true">
+              <div class="industries-canvas-wrap" style="position:relative; width:100%; height:100%;">
+                <canvas id="industriesCanvas" style="width:100%; height:100%; display:block;"></canvas>
+              </div>
+            </div>
           </div>
         </div>
       </section>
