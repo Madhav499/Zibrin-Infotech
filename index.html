@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZIBRIN INFOTECH | Engineering Tomorrow's Digital Future</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Zibrin Infotech engineers premium digital experiences — AI solutions, web & mobile apps, custom software, ERP, CRM and more. Where innovation never stops." />
+  <meta name="keywords" content="web development, mobile app development, AI chatbot, custom software, ERP, CRM, Flutter, React Native, SEO, AEO, GEO, cloud deployment" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://zibrin.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ZIBRIN INFOTECH | Engineering Tomorrow's Digital Future" />
+  <meta property="og:description" content="We don't just build websites — we engineer digital experiences. Infinite Innovation. Infinite Possibilities." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://zibrin.com/" />
+  <meta property="og:site_name" content="Zibrin Infotech" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ZIBRIN INFOTECH | Engineering Tomorrow's Digital Future" />
+  <meta name="twitter:description" content="We engineer digital experiences that define the future." />
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Zibrin Infotech",
+    "description": "Engineering Tomorrow's Digital Future",
+    "url": "https://zibrin.com",
+    "foundingDate": "2016",
+    "serviceArea": "Global",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "hello@zibrin.com",
+      "contactType": "customer support"
+    }
+  }
+  </script>
+  <meta name="theme-color" content="#030816" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Syncopate:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ─── Custom Cursor ─── -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-label" id="cursorLabel"></div>
+
+  <!-- ─── Loader ─── -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo-wrap">
+        <svg class="loader-svg" viewBox="0 0 100 100" width="80" height="80" aria-hidden="true">
+          <defs>
+            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#00e5ff" />
+              <stop offset="50%" stop-color="#7c3aed" />
+              <stop offset="100%" stop-color="#10b981" />
+            </linearGradient>
+          </defs>
+          <path id="lp1" d="M 22,65 C 10,55 10,35 22,25 C 34,15 46,32 54,48 C 62,64 74,75 84,65 C 94,55 94,35 84,25 C 76,17 64,17 56,25 L 88,15 M 88,15 L 75,17 M 88,15 L 85,27" fill="none" stroke="url(#logoGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="loader-glow"></div>
+      </div>
+      <div class="loader-brand">ZIBRIN INFOTECH</div>
+      <div class="loader-tagline">Engineering Tomorrow's Digital Future</div>
+      <div class="loader-bar-wrap"><div class="loader-bar" id="loaderBar"></div></div>
+      <div class="loader-pct" id="loaderPct">0%</div>
+    </div>
+  </div>
+
+  <!-- ─── Full-Screen Menu ─── -->
+  <div class="menu-overlay" id="menuOverlay" role="dialog" aria-label="Navigation menu" aria-hidden="true">
+    <div class="menu-grid-bg" aria-hidden="true"></div>
+    <nav class="menu-nav">
+      <ul class="menu-links" role="list">
+        <li><a href="#universe"   class="menu-link" data-label="01"><span class="ml-num">01</span><span class="ml-text">Universe</span></a></li>
+        <li><a href="#problems"   class="menu-link" data-label="02"><span class="ml-num">02</span><span class="ml-text">Challenges</span></a></li>
+        <li><a href="#solutions"  class="menu-link" data-label="03"><span class="ml-num">03</span><span class="ml-text">Solutions</span></a></li>
+        <li><a href="#services"   class="menu-link" data-label="04"><span class="ml-num">04</span><span class="ml-text">Services</span></a></li>
+        <li><a href="#stack"      class="menu-link" data-label="05"><span class="ml-num">05</span><span class="ml-text">Tech Stack</span></a></li>
+        <li><a href="#workflow"   class="menu-link" data-label="06"><span class="ml-num">06</span><span class="ml-text">Our Process</span></a></li>
+        <li><a href="#portfolio"  class="menu-link" data-label="07"><span class="ml-num">07</span><span class="ml-text">Portfolio</span></a></li>
+        <li><a href="#industries" class="menu-link" data-label="08"><span class="ml-num">08</span><span class="ml-text">Industries</span></a></li>
+        <li><a href="#why"        class="menu-link" data-label="09"><span class="ml-num">09</span><span class="ml-text">Why Zibrin</span></a></li>
+        <li><a href="#contact"    class="menu-link" data-label="10"><span class="ml-num">10</span><span class="ml-text">Contact</span></a></li>
+      </ul>
+      <div class="menu-contact-bar">
+        <div class="mcb-item">
+          <span class="mcb-label">Email</span>
+          <a href="mailto:hello@zibrin.com">hello@zibrin.com</a>
+        </div>
+        <div class="mcb-item">
+          <span class="mcb-label">Phone</span>
+          <a href="tel:+910000000000">+91 000 000 0000</a>
+        </div>
+        <div class="mcb-item">
+          <span class="mcb-label">Location</span>
+          <span>India · Global</span>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ─── Navbar ─── -->
+  <header class="navbar" id="navbar">
+    <a href="#universe" class="nav-logo" id="navLogo" aria-label="Zibrin Infotech Home">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 100 100" width="44" height="44" aria-hidden="true">
+          <defs>
+            <linearGradient id="navLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#00e5ff" />
+              <stop offset="50%" stop-color="#7c3aed" />
+              <stop offset="100%" stop-color="#10b981" />
+            </linearGradient>
+          </defs>
+          <path d="M 22,65 C 10,55 10,35 22,25 C 34,15 46,32 54,48 C 62,64 74,75 84,65 C 94,55 94,35 84,25 C 76,17 64,17 56,25 L 88,15 M 88,15 L 75,17 M 88,15 L 85,27" fill="none" stroke="url(#navLogoGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="nav-logo-glow"></div>
+      </div>
+      <div class="nav-logo-text">
+        <span class="nav-brand-name">ZIBRIN</span>
+        <span class="nav-brand-sub">INFOTECH</span>
+      </div>
+    </a>
+    <div class="nav-center-links" aria-hidden="true">
+      <a href="#services">Services</a>
+      <a href="#portfolio">Work</a>
+      <a href="#stack">Stack</a>
+    </div>
+    <div class="nav-right">
+      <a href="#contact" class="nav-cta-btn">Start a Project</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="menuOverlay">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ─── Main ─── -->
+  <main id="smooth-wrapper">
+    <div id="smooth-content">
+
+      <!-- ══════════════════════════════════════════
+           01 · HERO — DIGITAL UNIVERSE
+      ══════════════════════════════════════════ -->
+      <section id="universe" class="section hero-section" aria-labelledby="heroTitle">
+        <canvas id="heroCanvas" aria-hidden="true"></canvas>
+
+        <!-- Floating Holographic Z -->
+        <div class="hero-z-logo" aria-hidden="true">
+          <svg viewBox="0 0 100 100" width="120" height="120">
+            <path d="M20,22 L80,22 L30,78 L80,78" fill="none" stroke="url(#zGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="zGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#00e5ff"/>
+                <stop offset="100%" stop-color="#7c3aed"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="hz-ring hz-ring-1"></div>
+          <div class="hz-ring hz-ring-2"></div>
+          <div class="hz-ring hz-ring-3"></div>
+        </div>
+
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-dot"></span>
+            <span>Premium Software Engineering Studio</span>
+          </div>
+          <h1 id="heroTitle" class="hero-title">
+            <span class="title-line">ENGINEERING</span>
+            <span class="title-line title-accent">TOMORROW'S</span>
+            <span class="title-line">DIGITAL FUTURE</span>
+          </h1>
+          <p class="hero-sub">Infinite Innovation. Infinite Possibilities.<br class="hidden-mobile"><span> We don't build websites — we architect digital empires.</span></p>
+          <div class="hero-cta-row">
+            <a href="#services" class="btn btn-primary" data-magnetic data-cursor-text="Explore">
+              <span>Explore Our Universe</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5,12h14M12,5l7,7-7,7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#portfolio" class="btn btn-ghost" data-magnetic data-cursor-text="View">
+              <span>View Our Work</span>
+            </a>
+          </div>
+          <div class="hero-trust-bar">
+            <div class="htb-item"><span class="htb-icon">✦</span> ISO Certified Process</div>
+            <div class="htb-sep"></div>
+            <div class="htb-item"><span class="htb-icon">✦</span> Agile Methodology</div>
+            <div class="htb-sep"></div>
+            <div class="htb-item"><span class="htb-icon">✦</span> 30-Day Support Guarantee</div>
+          </div>
+        </div>
+
+        <div class="hero-scroll-hint" aria-hidden="true">
+          <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+          <span>SCROLL</span>
+        </div>
+
+        <div class="hero-stats" aria-label="Company statistics">
+          <div class="stat-item">
+            <div class="stat-row"><span class="stat-num" data-count="250">0</span><span class="stat-plus">+</span></div>
+            <small>Projects Delivered</small>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-row"><span class="stat-num" data-count="50">0</span><span class="stat-plus">+</span></div>
+            <small>Global Clients</small>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-row"><span class="stat-num" data-count="8">0</span><span class="stat-plus">+</span></div>
+            <small>Years of Excellence</small>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-row"><span class="stat-num" data-count="98">0</span><span class="stat-plus">%</span></div>
+            <small>Client Retention</small>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════
+           ABOUT STRIP — Mission & Vision
+      ══════════════════════════════════════════ -->
+      <section id="about" class="section about-strip" aria-labelledby="aboutTitle">
+        <div class="container">
+          <div class="about-inner">
+            <div class="about-left">
+              <span class="section-label">ABOUT ZIBRIN</span>
+              <h2 id="aboutTitle" class="about-headline section-title">We Don't Build Products.<br><span class="gradient-text">We Build Legacies.</span></h2>
+              <p class="about-body">Zibrin Infotech is a full-spectrum software engineering studio founded on one belief: technology should be indistinguishable from magic. Since 2016, we've been crafting digital products that don't just function — they inspire. From AI-powered platforms to enterprise-grade ERP systems, we engineer every line of code with the precision of an architect and the soul of a designer.</p>
+              <p class="about-body">Our team of 40+ engineers, designers, and strategists operates from a single north star: your business's success in the digital age.</p>
+              <div class="about-values">
+                <div class="av-pill">Engineering First</div>
+                <div class="av-pill">Design Forward</div>
+                <div class="av-pill">AI Native</div>
+                <div class="av-pill">Data Driven</div>
+              </div>
+            </div>
+            <div class="about-right" style="position:relative;">
+              <canvas id="developerCanvas" style="position:absolute;inset:0;width:100%;height:100%;z-index:0;opacity:0.35;pointer-events:none;"></canvas>
+              <div class="about-card" data-tilt>
+                <div class="ac-num">01</div>
+                <h3>Our Mission</h3>
+                <p>To engineer digital experiences so powerful that they become the competitive advantage of the businesses we serve — making them unstoppable in their markets.</p>
+              </div>
+              <div class="about-card" data-tilt>
+                <div class="ac-num">02</div>
+                <h3>Our Vision</h3>
+                <p>To become the world's most trusted technology partner for ambitious companies — the studio that turns bold ideas into digital realities that shape industries.</p>
+              </div>
+              <div class="about-card" data-tilt>
+                <div class="ac-num">03</div>
+                <h3>Our Philosophy</h3>
+                <p>Perfection is not a destination, it's a standard. We iterate relentlessly, optimise obsessively, and deliver work that outlasts trends and outperforms expectations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════
+           02 · PROBLEMS BUSINESSES FACE
+      ══════════════════════════════════════════ -->
+      <section id="problems" class="section problems-section" aria-labelledby="problemsTitle">
+        <div class="container">
+          <div class="section-header center-header">
+            <span class="section-label">02 / CHALLENGES</span>
+            <h2 id="problemsTitle" class="section-title">The Digital<br><span class="gradient-text">Pain Points</span></h2>
+            <p class="section-desc">Most businesses are losing ground daily because of invisible technology failures. Do any of these sound familiar?</p>
+          </div>
+          <div class="problems-grid">
+            <article class="problem-card" data-tilt>
+              <div class="problem-icon-wrap"><svg viewBox="0 0 40 40" width="36" height="36"><circle cx="20" cy="20" r="15" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M14,14L26,26M26,14L14,26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+              <h3>Sluggish, Outdated Websites</h3>
+              <p>53% of users abandon a site that takes more than 3 seconds to load. Your slow website is silently killing your conversions every single day.</p>
+              <div class="pc-stat"><span class="pc-num">53%</span><span>users abandon in 3s</span></div>
+            </article>
+            <article class="problem-card" data-tilt>
+              <div class="problem-icon-wrap"><svg viewBox="0 0 40 40" width="36" height="36"><rect x="8" y="8" width="24" height="24" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M14,20h12M14,15h8M14,25h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+              <h3>Disconnected Tech Stack</h3>
+              <p>Businesses lose an average of 20–30% productivity to fragmented tools that don't communicate. Data silos create blind spots that cost you growth.</p>
+              <div class="pc-stat"><span class="pc-num">30%</span><span>productivity lost to silos</span></div>
+            </article>
+            <article class="problem-card" data-tilt>
+              <div class="problem-icon-wrap"><svg viewBox="0 0 40 40" width="36" height="36"><path d="M20,8L32,26H8Z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M20,18v5M20,25v1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+              <h3>Zero AI Leverage</h3>
+              <p>Your competitors are already using AI to automate, personalise, and scale at machine speed. Every week without AI widens the gap you need to close.</p>
+              <div class="pc-stat"><span class="pc-num">3×</span><span>faster with AI automation</span></div>
+            </article>
+            <article class="problem-card" data-tilt>
+              <div class="problem-icon-wrap"><svg viewBox="0 0 40 40" width="36" height="36"><circle cx="20" cy="20" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="20" cy="20" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M20,6v8M20,26v8M6,20h8M26,20h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+              <h3>Invisible to Search Engines</h3>
+              <p>Page 2 of Google might as well be page 200. With AI search engines now answering questions directly, visibility requires AEO and GEO strategies most agencies can't provide.</p>
+              <div class="pc-stat"><span class="pc-num">&lt;1%</span><span>of users click page 2</span></div>
+            </article>
+            <article class="problem-card" data-tilt>
+              <div class="problem-icon-wrap"><svg viewBox="0 0 40 40" width="36" height="36"><rect x="12" y="8" width="16" height="24" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M17,34h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+              <h3>No Mobile Strategy</h3>
+              <p>Mobile accounts for 60%+ of all web traffic. A non-existent or poorly built app means you're handing customers directly to your competitors.</p>
+              <div class="pc-stat"><span class="pc-num">60%</span><span>traffic is mobile</span></div>
+            </article>
+            <article class="problem-card" data-tilt>
+              <div class="problem-icon-wrap"><svg viewBox="0 0 40 40" width="36" height="36"><path d="M8,32L8,20Q8,8 20,8Q32,8 32,20L32,32" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M4,32h32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M20,8v8" stroke="currentColor" stroke-width="1.5"/></svg></div>
+              <h3>Unreliable Infrastructure</h3>
+              <p>Every hour of downtime costs SMEs an average of ₹5–50 lakhs in lost revenue and permanent reputation damage. Unoptimised servers are a ticking time bomb.</p>
+              <div class="pc-stat"><span class="pc-num">₹50L</span><span>avg. downtime cost/hour</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════
+           03 · HOW ZIBRIN SOLVES THEM
+      ══════════════════════════════════════════ -->
+      <section id="solutions" class="section solutions-section" aria-labelledby="solutionsTitle">
+        <div class="solutions-bg-canvas" aria-hidden="true"></div>
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">03 / SOLUTIONS</span>
+            <h2 id="solutionsTitle" class="section-title">One Studio.<br><span class="gradient-text">Every Solution.</span></h2>
+          </div>
+          <div class="solutions-list">
+            <div class="solution-row" data-reveal-row>
+              <div class="solution-num">01</div>
+              <div class="solution-body">
+                <h3>Engineering-First Approach</h3>
+                <p>Before a single line of code is written, we architect systems built for scale. We audit your current setup, identify performance bottlenecks, and design a solution that's 10× faster from day one. Our websites score 95+ on Google Lighthouse — guaranteed.</p>
+              </div>
+              <div class="solution-tag-group">
+                <div class="solution-tag">Performance</div>
+                <div class="solution-tag secondary">Scalability</div>
+              </div>
+            </div>
+            <div class="solution-row" data-reveal-row>
+              <div class="solution-num">02</div>
+              <div class="solution-body">
+                <h3>Unified Technology Ecosystem</h3>
+                <p>We design your entire technology stack as a single, cohesive intelligence — APIs, databases, dashboards, mobile apps, and web platforms that communicate in real time. No more data silos. No more manual synchronisation. Just seamless, automated flow.</p>
+              </div>
+              <div class="solution-tag-group">
+                <div class="solution-tag">Integration</div>
+                <div class="solution-tag secondary">Automation</div>
+              </div>
+            </div>
+            <div class="solution-row" data-reveal-row>
+              <div class="solution-num">03</div>
+              <div class="solution-body">
+                <h3>AI-Augmented Products</h3>
+                <p>We embed intelligence into your products using GPT-4, LangChain, custom ML models, and automation frameworks. From intelligent chatbots that handle 80% of support queries to predictive analytics dashboards — your business runs smarter, faster, and leaner.</p>
+              </div>
+              <div class="solution-tag-group">
+                <div class="solution-tag">AI & ML</div>
+                <div class="solution-tag secondary">Automation</div>
+              </div>
+            </div>
+            <div class="solution-row" data-reveal-row>
+              <div class="solution-num">04</div>
+              <div class="solution-body">
+                <h3>Omnipresent Search Visibility</h3>
+                <p>We make you discoverable everywhere humans and AI search. Traditional SEO ensures Google rankings. AEO (Answer Engine Optimisation) gets you into voice search and Google SGE. GEO (Generative Engine Optimisation) makes ChatGPT, Gemini, and Perplexity recommend your brand by name.</p>
+              </div>
+              <div class="solution-tag-group">
+                <div class="solution-tag">SEO</div>
+                <div class="solution-tag secondary">AEO</div>
+                <div class="solution-tag tertiary">GEO</div>
+              </div>
+            </div>
+            <div class="solution-row" data-reveal-row>
+              <div class="solution-num">05</div>
+              <div class="solution-body">
+                <h3>Enterprise-Grade Infrastructure</h3>
+                <p>We deploy on battle-tested cloud architecture — AWS, Cloudflare CDN, Docker containers, auto-scaling servers, and 99.9% uptime SLAs. Your platform handles 10 users or 10 million with the same grace. Security, performance, and reliability built in from the foundation.</p>
+              </div>
+              <div class="solution-tag-group">
+                <div class="solution-tag">Cloud</div>
+                <div class="solution-tag secondary">DevOps</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════
+           04 · SERVICES UNIVERSE
+      ══════════════════════════════════════════ -->
+      <section id="services" class="section services-section" aria-labelledby="servicesTitle">
+        <div class="container">
+          <div class="section-header center-header">
+            <span class="section-label">04 / SERVICES</span>
+            <h2 id="servicesTitle" class="section-title">What We<br><span class="gradient-text">Engineer</span></h2>
+            <p class="section-desc">Every service is delivered with engineering precision, design elegance, and business-outcome focus.</p>
+          </div>
+          <div class="services-layout">
+            <div class="services-accordion">
+
+            <div class="service-item" id="svc-web">
+              <button class="service-toggle" aria-expanded="false" aria-controls="svc-web-body">
+                <span class="svc-num">01</span>
+                <div class="svc-title-group">
+                  <span class="svc-name">Website Development</span>
+                  <span class="svc-tagline">Blazing-fast, conversion-optimised digital presence</span>
+                </div>
+                <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 20 20" width="18" height="18"><path d="M4,10h12M10,4l6,6-6,6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+              <div class="service-body" id="svc-web-body">
+                <div class="service-details-v2">
+                  <div class="sdv2-overview">
+                    <h4>Overview</h4>
+                    <p>We build websites that are engineering masterpieces — pixel-perfect design fused with exceptional performance. Every site we build achieves 95+ Google Lighthouse scores, loads in under 2 seconds, and is architected to convert visitors into clients.</p>
+                    <div class="sdv2-industries"><strong>Ideal for:</strong> SaaS, Corporate, E-Commerce, Agencies, Portfolios, Startups</div>
+                  </div>
+                  <div class="sdv2-grid">
+                    <div class="sdv2-col">
+                      <h4>Technologies</h4>
+                      <div class="tech-chips"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP</span><span>Laravel</span><span>Node.js</span><span>React</span><span>Next.js</span></div>
+                    </div>
+                    <div class="sdv2-col">
+                      <h4>Key Benefits</h4>
+                      <ul class="svc-benefits-list">
+                        <li>Sub-2-second load times guaranteed</li>
+                        <li>Mobile-first, fully responsive design</li>
+                        <li>Full SEO + AEO + GEO optimisation</li>
+                        <li>Conversion-rate optimised layouts</li>
+                        <li>CMS integration for easy editing</li>
+                      </ul>
+                    </div>
+                    <div class="sdv2-col">
+                      <h4>Process</h4>
+                      <ul class="svc-process-list">
+                        <li>1. Discovery & Strategy</li>
+                        <li>2. Wireframe & UI Design</li>
+                        <li>3. Development Sprint</li>
+                        <li>4. QA & Performance Audit</li>
+                        <li>5. Launch & Handover</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sdv2-footer">
+                    <div class="sdv2-timeline"><span class="tl-label">Timeline</span><span class="timeline-badge">4–12 Weeks</span></div>
+                    <a href="#contact" class="btn btn-sm btn-outline">Get a Quote →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-item" id="svc-ecom">
+              <button class="service-toggle" aria-expanded="false" aria-controls="svc-ecom-body">
+                <span class="svc-num">02</span>
+                <div class="svc-title-group">
+                  <span class="svc-name">E-Commerce Development</span>
+                  <span class="svc-tagline">High-converting stores that sell while you sleep</span>
+                </div>
+                <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 20 20" width="18" height="18"><path d="M4,10h12M10,4l6,6-6,6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+              <div class="service-body" id="svc-ecom-body">
+                <div class="service-details-v2">
+                  <div class="sdv2-overview">
+                    <h4>Overview</h4>
+                    <p>We build e-commerce platforms engineered to convert. From custom storefronts to complex multi-vendor marketplaces, every element — from product discovery to checkout — is optimised for maximum sales velocity.</p>
+                    <div class="sdv2-industries"><strong>Ideal for:</strong> Retail, Fashion, FMCG, Electronics, D2C Brands, Wholesale</div>
+                  </div>
+                  <div class="sdv2-grid">
+                    <div class="sdv2-col">
+                      <h4>Technologies</h4>
+                      <div class="tech-chips"><span>WooCommerce</span><span>Shopify</span><span>Laravel</span><span>Stripe</span><span>Razorpay</span><span>PayPal</span><span>Elasticsearch</span></div>
+                    </div>
+                    <div class="sdv2-col">
+                      <h4>Key Benefits</h4>
+                      <ul class="svc-benefits-list">
+                        <li>AI-powered product recommendations</li>
+                        <li>Multi-currency & multi-language support</li>
+                        <li>Secure, PCI-compliant payment gateways</li>
+                        <li>Real-time inventory management</li>
+                        <li>Automated order tracking & notifications</li>
+                      </ul>
+                    </div>
+                    <div class="sdv2-col">
+                      <h4>Business Value</h4>
+                      <ul class="svc-process-list">
+                        <li>+240% avg. revenue increase post-launch</li>
+                        <li>35% lower cart abandonment</li>
+                        <li>60% faster order processing</li>
+                        <li>24/7 automated sales engine</li>
+                        <li>Scalable to millions of SKUs</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sdv2-footer">
+                    <div class="sdv2-timeline"><span class="tl-label">Timeline</span><span class="timeline-badge">6–16 Weeks</span></div>
+                    <a href="#contact" class="btn btn-sm btn-outline">Get a Quote →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-item" id="svc-mobile">
+              <button class="service-toggle" aria-expanded="false" aria-controls="svc-mobile-body">
+                <span class="svc-num">03</span>
+                <div class="svc-title-group">
+                  <span class="svc-name">Mobile App Development</span>
+                  <span class="svc-tagline">Flutter · React Native · Android · iOS</span>
+                </div>
+                <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 20 20" width="18" height="18"><path d="M4,10h12M10,4l6,6-6,6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+              <div class="service-body" id="svc-mobile-body">
+                <div class="service-details-v2">
+                  <div class="sdv2-overview">
+                    <h4>Overview</h4>
+                    <p>We build mobile apps that users love. Our cross-platform expertise in Flutter and React Native means you get one codebase that delivers native performance on both Android and iOS — cutting development time and cost by up to 40% without sacrificing quality.</p>
+                    <div class="sdv2-industries"><strong>Ideal for:</strong> FinTech, Healthcare, Logistics, EdTech, Retail, On-Demand Services</div>
+                  </div>
+                  <div class="sdv2-grid">
+                    <div class="sdv2-col">
+                      <h4>Technologies</h4>
+                      <div class="tech-chips"><span>Flutter</span><span>React Native</span><span>Dart</span><span>Firebase</span><span>Supabase</span><span>REST APIs</span><span>GraphQL</span></div>
+                    </div>
+                    <div class="sdv2-col">
+                      <h4>Key Benefits</h4>
+                      <ul class="svc-benefits-list">
+                        <li>Single codebase for Android & iOS</li>
+                        <li>Native-level performance & animations</li>
+                        <li>Play Store & App Store deployment</li>
+                        <li>Offline mode & push notifications</li>
+                        <li>Real-time sync & live data feeds</li>
+                      </ul>
+                    </div>
+                    <div class="sdv2-col">
+                      <h4>Deployment</h4>
+                      <ul class="svc-process-list">
+                        <li>Google Play Store (Android)</li>
+                        <li>Apple App Store (iOS)</li>
+                        <li>Firebase App Distribution</li>
+                        <li>CI/CD automated pipelines</li>
+                        <li>Beta testing & soft-launch support</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sdv2-footer">
+                    <div class="sdv2-timeline"><span class="tl-label">Timeline</span><span class="timeline-badge">8–20 Weeks</span></div>
+                    <a href="#contact" class="btn btn-sm btn-outline">Get a Quote →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-item" id="svc-ai">
+              <button class="service-toggle" aria-expanded="false" aria-controls="svc-ai-body">
+                <span class="svc-num">04</span>
+                <div class="svc-title-group">
+                  <span class="svc-name">AI Chatbot & OpenAI Integration</span>
+                  <span class="svc-tagline">Intelligent automation that works 24/7</span>
+                </div>
+                <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 20 20" width="18" height="18"><path d="M4,10h12M10,4l6,6-6,6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+              <div class="service-body" id="svc-ai-body">
+                <div class="service-details-v2">
+                  <div class="sdv2-overview">
+                    <h4>Overview</h4>
+                    <p>We build AI assistants trained on your business data that handle customer support, qualify leads, process orders, and answer complex questions — with the accuracy of your best employee and the availability of a machine. Our chatbots have handled 80% of support queries autonomously for our clients, paying for themselves within the first month.</p>
+                    <div class="sdv2-industries"><strong>Ideal for:</strong> E-Commerce, SaaS, Healthcare, Banking, Education, Real Estate</div>
+                  </div>
+                  <div class="sdv2-grid">
+                    <div class="sdv2-col">
+                      <h4>Technologies</h4>
+                      <div class="tech-chips"><span>OpenAI GPT-4</span><span>LangChain</span><span>Python</span><span>Node.js</span><span>Pinecone</span><span>Weaviate</span><span>RAG</span></div>
+                    </div>
+                    <div class="sdv2-col">
+                      <h4>Key Benefits</h4>
+                      <ul class="svc-benefits-list">
+                        <li>80%+ of support queries resolved automatically</li>
+                        <li>24/7 intelligent customer engagement</li>
+                        <li>Custom-trained on your knowledge base</li>
+                        <li>Multi-channel: web, WhatsApp, Slack, email</li>
+                        <li>Full conversation analytics dashboard</li>
+                      </ul>
+                    </div>
+                    <div class="sdv2-col">
+                      <h4>AI Capabilities</h4>
+                      <ul class="svc-process-list">
+                        <li>Natural language understanding</li>
+                        <li>Context-aware multi-turn conversations</li>
+                        <li>Sentiment analysis & escalation</li>
+                        <li>Multilingual support (50+ languages)</li>
+                        <li>Custom workflow automation</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sdv2-footer">
+                    <div class="sdv2-timeline"><span class="tl-label">Timeline</span><span class="timeline-badge">3–8 Weeks</span></div>
+                    <a href="#contact" class="btn btn-sm btn-outline">Get a Quote →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-item" id="svc-erp">
+              <button class="service-toggle" aria-expanded="false" aria-controls="svc-erp-body">
+                <span class="svc-num">05</span>
+                <div class="svc-title-group">
+                  <span class="svc-name">Custom ERP / CRM Development</span>
+                  <span class="svc-tagline">Enterprise systems built precisely for your operations</span>
+                </div>
+                <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 20 20" width="18" height="18"><path d="M4,10h12M10,4l6,6-6,6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+              <div class="service-body" id="svc-erp-body">
+                <div class="service-details-v2">
+                  <div class="sdv2-overview">
+                    <h4>Overview</h4>
+                    <p>Off-the-shelf ERP and CRM tools are built for the average business. You're not average. We engineer bespoke enterprise systems that mirror your exact workflows, eliminating the compromises and workarounds that generic software forces on your team.</p>
+                    <div class="sdv2-industries"><strong>Ideal for:</strong> Manufacturing, Healthcare, Logistics, Finance, Education, Retail Chains</div>
+                  </div>
+                  <div class="sdv2-grid">
+                    <div class="sdv2-col">
+                      <h4>Technologies</h4>
+                      <div class="tech-chips"><span>Laravel</span><span>React</span><span>MySQL</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span><span>AWS</span></div>
+                    </div>
+                    <div class="sdv2-col">
+                      <h4>Key Modules</h4>
+                      <ul class="svc-benefits-list">
+                        <li>Inventory & supply chain management</li>
+                        <li>HR, payroll & attendance automation</li>
+                        <li>Sales pipeline & lead tracking</li>
+                        <li>Real-time financial dashboards</li>
+                        <li>Role-based access control (RBAC)</li>
+                      </ul>
+                    </div>
+                    <div class="sdv2-col">
+                      <h4>Business Value</h4>
+                      <ul class="svc-process-list">
+                        <li>40% reduction in operational costs</li>
+                        <li>Zero data duplication across departments</li>
+                        <li>Real-time visibility across the business</li>
+                        <li>Third-party API integrations</li>
+                        <li>Scales from 5 to 5,000+ users</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sdv2-footer">
+                    <div class="sdv2-timeline"><span class="tl-label">Timeline</span><span class="timeline-badge">12–32 Weeks</span></div>
+                    <a href="#contact" class="btn btn-sm btn-outline">Get a Quote →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-item" id="svc-seo">
+              <button class="service-toggle" aria-expanded="false" aria-controls="svc-seo-body">
+                <span class="svc-num">06</span>
+                <div class="svc-title-group">
+                  <span class="svc-name">SEO · AEO · GEO</span>
+                  <span class="svc-tagline">Dominate every search engine — human and AI</span>
+                </div>
+                <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 20 20" width="18" height="18"><path d="M4,10h12M10,4l6,6-6,6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+              <div class="service-body" id="svc-seo-body">
+                <div class="service-details-v2">
+                  <div class="sdv2-overview">
+                    <h4>Overview</h4>
+                    <p>Search is evolving at unprecedented speed. Google SGE, ChatGPT, Gemini, and Perplexity are fundamentally changing how people discover businesses. We engineer your presence across all three layers: traditional SEO for Google rankings, AEO for featured answers and voice search, and GEO to make AI engines cite and recommend your brand.</p>
+                    <div class="sdv2-industries"><strong>Ideal for:</strong> All businesses wanting sustainable organic discovery and authority</div>
+                  </div>
+                  <div class="sdv2-grid">
+                    <div class="sdv2-col">
+                      <h4>Our Approach</h4>
+                      <div class="tech-chips"><span>Technical SEO</span><span>Schema Markup</span><span>Core Web Vitals</span><span>E-E-A-T</span><span>AEO</span><span>GEO</span></div>
+                    </div>
+                    <div class="sdv2-col">
+                      <h4>Key Benefits</h4>
+                      <ul class="svc-benefits-list">
+                        <li>Position #1 rankings for target keywords</li>
+                        <li>Featured snippets & AI overview appearances</li>
+                        <li>AI engine brand citations (GEO)</li>
+                        <li>Sustainable organic traffic growth</li>
+                        <li>Monthly performance reporting</li>
+                      </ul>
+                    </div>
+                    <div class="sdv2-col">
+                      <h4>Results We Deliver</h4>
+                      <ul class="svc-process-list">
+                        <li>Page 1 rankings in 60–90 days</li>
+                        <li>300%+ organic traffic increase</li>
+                        <li>Featured in AI Overview answers</li>
+                        <li>Cited by ChatGPT & Gemini</li>
+                        <li>Full monthly analytics reporting</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sdv2-footer">
+                    <div class="sdv2-timeline"><span class="tl-label">Engagement</span><span class="timeline-badge">Ongoing Monthly</span></div>
+                    <a href="#contact" class="btn btn-sm btn-outline">Get a Quote →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-item" id="svc-cloud">
+              <button class="service-toggle" aria-expanded="false" aria-controls="svc-cloud-body">
+                <span class="svc-num">07</span>
+                <div class="svc-title-group">
+                  <span class="svc-name">Cloud Deployment & DevOps</span>
+                  <span class="svc-tagline">AWS · Docker · CI/CD · 99.9% Uptime SLA</span>
+                </div>
+                <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 20 20" width="18" height="18"><path d="M4,10h12M10,4l6,6-6,6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+              <div class="service-body" id="svc-cloud-body">
+                <div class="service-details-v2">
+                  <div class="sdv2-overview">
+                    <h4>Overview</h4>
+                    <p>We architect, deploy, and manage cloud infrastructure that performs flawlessly at any scale. From containerised microservices to serverless architectures, we design systems that auto-scale, self-heal, and maintain 99.9%+ uptime — so your business never stops.</p>
+                    <div class="sdv2-industries"><strong>Ideal for:</strong> SaaS, FinTech, Healthcare, E-Commerce, Enterprise Applications</div>
+                  </div>
+                  <div class="sdv2-grid">
+                    <div class="sdv2-col">
+                      <h4>Technologies</h4>
+                      <div class="tech-chips"><span>AWS</span><span>Docker</span><span>Kubernetes</span><span>Cloudflare</span><span>GitHub Actions</span><span>Nginx</span><span>Terraform</span></div>
+                    </div>
+                    <div class="sdv2-col">
+                      <h4>Key Services</h4>
+                      <ul class="svc-benefits-list">
+                        <li>Cloud architecture design & migration</li>
+                        <li>CI/CD pipeline setup & automation</li>
+                        <li>Docker & Kubernetes orchestration</li>
+                        <li>DDoS protection via Cloudflare</li>
+                        <li>24/7 monitoring & incident response</li>
+                      </ul>
+                    </div>
+                    <div class="sdv2-col">
+                      <h4>Guarantees</h4>
+                      <ul class="svc-process-list">
+                        <li>99.9% uptime SLA</li>
+                        <li>Sub-100ms global response times</li>
+                        <li>Automated daily backups</li>
+                        <li>SSL/TLS encryption end-to-end</li>
+                        <li>GDPR & SOC2 compliance support</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sdv2-footer">
+                    <div class="sdv2-timeline"><span class="tl-label">Timeline</span><span class="timeline-badge">2–6 Weeks</span></div>
+                    <a href="#contact" class="btn btn-sm btn-outline">Get a Quote →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="services-visual-sidebar" aria-hidden="true">
+              <div class="services-canvas-wrap">
+                <canvas id="servicesCanvas"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════
+           05 · TECHNOLOGY STACK
+      ══════════════════════════════════════════ -->
+      <section id="stack" class="section stack-section" aria-labelledby="stackTitle">
+        <canvas id="stackCanvas" aria-hidden="true"></canvas>
+        <div class="container stack-container">
+          <div class="section-header center-header">
+            <span class="section-label">05 / TECH STACK</span>
+            <h2 id="stackTitle" class="section-title">Our Technology<br><span class="gradient-text">Ecosystem</span></h2>
+            <p class="section-desc">Hand-picked technologies, mastered to perfection. Every tool chosen for performance, reliability, and developer experience.</p>
+          </div>
+          <div class="stack-categories">
+            <button class="scat-btn active" data-cat="all">All</button>
+            <button class="scat-btn" data-cat="frontend">Frontend</button>
+            <button class="scat-btn" data-cat="backend">Backend</button>
+            <button class="scat-btn" data-cat="mobile">Mobile</button>
+            <button class="scat-btn" data-cat="database">Database</button>
+            <button class="scat-btn" data-cat="cloud">Cloud & DevOps</button>
+            <button class="scat-btn" data-cat="ai">AI & ML</button>
+          </div>
+          <div class="stack-grid">
+            <div class="stack-node" data-cat="frontend" data-tech="React" data-desc="Component-based UI library for blazing-fast web apps">
+              <div class="stack-icon-wrap"><div class="stack-icon">⚛</div></div>
+              <span class="stack-name">React</span>
+              <span class="stack-cat-label">Frontend</span>
+            </div>
+            <div class="stack-node" data-cat="frontend" data-tech="Next.js" data-desc="Full-stack React framework with server-side rendering">
+              <div class="stack-icon-wrap"><div class="stack-icon">▲</div></div>
+              <span class="stack-name">Next.js</span>
+              <span class="stack-cat-label">Frontend</span>
+            </div>
+            <div class="stack-node" data-cat="backend" data-tech="Node.js" data-desc="High-performance JavaScript runtime for backend">
+              <div class="stack-icon-wrap"><div class="stack-icon">⬡</div></div>
+              <span class="stack-name">Node.js</span>
+              <span class="stack-cat-label">Backend</span>
+            </div>
+            <div class="stack-node" data-cat="backend" data-tech="PHP" data-desc="Robust server-side language powering 80% of the web">
+              <div class="stack-icon-wrap"><div class="stack-icon">🐘</div></div>
+              <span class="stack-name">PHP</span>
+              <span class="stack-cat-label">Backend</span>
+            </div>
+            <div class="stack-node" data-cat="backend" data-tech="Laravel" data-desc="Elegant PHP framework for enterprise-grade backends">
+              <div class="stack-icon-wrap"><div class="stack-icon">🔴</div></div>
+              <span class="stack-name">Laravel</span>
+              <span class="stack-cat-label">Backend</span>
+            </div>
+            <div class="stack-node" data-cat="mobile" data-tech="Flutter" data-desc="Google's UI toolkit for native cross-platform apps">
+              <div class="stack-icon-wrap"><div class="stack-icon">💙</div></div>
+              <span class="stack-name">Flutter</span>
+              <span class="stack-cat-label">Mobile</span>
+            </div>
+            <div class="stack-node" data-cat="mobile" data-tech="React Native" data-desc="Cross-platform mobile apps with React components">
+              <div class="stack-icon-wrap"><div class="stack-icon">📱</div></div>
+              <span class="stack-name">React Native</span>
+              <span class="stack-cat-label">Mobile</span>
+            </div>
+            <div class="stack-node" data-cat="cloud" data-tech="Firebase" data-desc="Google's real-time backend as a service platform">
+              <div class="stack-icon-wrap"><div class="stack-icon">🔥</div></div>
+              <span class="stack-name">Firebase</span>
+              <span class="stack-cat-label">Cloud</span>
+            </div>
+            <div class="stack-node" data-cat="cloud" data-tech="Supabase" data-desc="Open-source Firebase alternative with PostgreSQL">
+              <div class="stack-icon-wrap"><div class="stack-icon">⚡</div></div>
+              <span class="stack-name">Supabase</span>
+              <span class="stack-cat-label">Cloud</span>
+            </div>
+            <div class="stack-node" data-cat="database" data-tech="MySQL" data-desc="World's most popular relational database">
+              <div class="stack-icon-wrap"><div class="stack-icon">🗄</div></div>
+              <span class="stack-name">MySQL</span>
+              <span class="stack-cat-label">Database</span>
+            </div>
+            <div class="stack-node" data-cat="database" data-tech="MongoDB" data-desc="Flexible NoSQL database for modern applications">
+              <div class="stack-icon-wrap"><div class="stack-icon">🍃</div></div>
+              <span class="stack-name">MongoDB</span>
+              <span class="stack-cat-label">Database</span>
+            </div>
+            <div class="stack-node" data-cat="database" data-tech="PostgreSQL" data-desc="Advanced open-source relational database">
+              <div class="stack-icon-wrap"><div class="stack-icon">🐘</div></div>
+              <span class="stack-name">PostgreSQL</span>
+              <span class="stack-cat-label">Database</span>
+            </div>
+            <div class="stack-node" data-cat="cloud" data-tech="Docker" data-desc="Container platform for consistent deployments">
+              <div class="stack-icon-wrap"><div class="stack-icon">🐳</div></div>
+              <span class="stack-name">Docker</span>
+              <span class="stack-cat-label">DevOps</span>
+            </div>
+            <div class="stack-node" data-cat="cloud" data-tech="AWS" data-desc="World's leading cloud infrastructure provider">
+              <div class="stack-icon-wrap"><div class="stack-icon">☁</div></div>
+              <span class="stack-name">AWS</span>
+              <span class="stack-cat-label">Cloud</span>
+            </div>
+            <div class="stack-node" data-cat="cloud" data-tech="Cloudflare" data-desc="Global CDN, DDoS protection and edge computing">
+              <div class="stack-icon-wrap"><div class="stack-icon">🌐</div></div>
+              <span class="stack-name">Cloudflare</span>
+              <span class="stack-cat-label">CDN</span>
+            </div>
+            <div class="stack-node" data-cat="ai" data-tech="OpenAI" data-desc="GPT-4 and AI APIs for intelligent applications">
+              <div class="stack-icon-wrap"><div class="stack-icon">🤖</div></div>
+              <span class="stack-name">OpenAI</span>
+              <span class="stack-cat-label">AI</span>
+            </div>
+            <div class="stack-node" data-cat="backend" data-tech="Python" data-desc="Versatile language for AI, ML, and automation">
+              <div class="stack-icon-wrap"><div class="stack-icon">🐍</div></div>
+              <span class="stack-name">Python</span>
+              <span class="stack-cat-label">Backend</span>
+            </div>
+            <div class="stack-node" data-cat="ai" data-tech="LangChain" data-desc="Framework for building LLM-powered applications">
+              <div class="stack-icon-wrap"><div class="stack-icon">⛓</div></div>
+              <span class="stack-name">LangChain</span>
+              <span class="stack-cat-label">AI</span>
+            </div>
+            <div class="stack-node" data-cat="frontend" data-tech="JavaScript" data-desc="The universal language of the modern web">
+              <div class="stack-icon-wrap"><div class="stack-icon" style="font-family:monospace;font-weight:900;font-size:14px;color:#f0d000">JS</div></div>
+              <span class="stack-name">JavaScript</span>
+              <span class="stack-cat-label">Frontend</span>
+            </div>
+            <div class="stack-node" data-cat="backend" data-tech="GraphQL" data-desc="Efficient API query language for flexible data fetching">
+              <div class="stack-icon-wrap"><div class="stack-icon">◆</div></div>
+              <span class="stack-name">GraphQL</span>
+              <span class="stack-cat-label">API</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════
+           06 · DEVELOPMENT WORKFLOW
+      ══════════════════════════════════════════ -->
+      <section id="workflow" class="section workflow-section" aria-labelledby="workflowTitle">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">06 / OUR PROCESS</span>
+            <h2 id="workflowTitle" class="section-title">How We Build<br><span class="gradient-text">Greatness</span></h2>
+          </div>
+          <div class="workflow-layout">
+            <div class="workflow-steps">
+              <div class="wf-step" data-step="01">
+                <div class="wf-connector"><div class="wf-line"></div><div class="wf-dot"></div></div>
+                <div class="wf-content">
+                  <div class="wf-header">
+                    <span class="wf-num">01</span>
+                    <h3>Discovery & Strategy</h3>
+                  </div>
+                  <p>In-depth stakeholder interviews, competitive analysis, user research, and technical scoping. We define the project's north star — objectives, KPIs, and success metrics — before a single pixel is designed.</p>
+                  <div class="wf-deliverables"><span>Deliverables:</span> Project Brief, Technical Spec, Roadmap, Timeline</div>
+                  <div class="wf-duration">1–2 Weeks</div>
+                </div>
+              </div>
+              <div class="wf-step" data-step="02">
+                <div class="wf-connector"><div class="wf-line"></div><div class="wf-dot"></div></div>
+                <div class="wf-content">
+                  <div class="wf-header">
+                    <span class="wf-num">02</span>
+                    <h3>Architecture & Design</h3>
+                  </div>
+                  <p>System architecture design, database schema, API contracts, and UI/UX design with interactive prototypes. Every screen, every flow, every micro-interaction — designed with purpose and tested with real users before development begins.</p>
+                  <div class="wf-deliverables"><span>Deliverables:</span> System Architecture, UI Prototypes, Design System</div>
+                  <div class="wf-duration">2–4 Weeks</div>
+                </div>
+              </div>
+              <div class="wf-step" data-step="03">
+                <div class="wf-connector"><div class="wf-line"></div><div class="wf-dot"></div></div>
+                <div class="wf-content">
+                  <div class="wf-header">
+                    <span class="wf-num">03</span>
+                    <h3>Engineering Sprint</h3>
+                  </div>
+                  <p>Agile 2-week development sprints with daily standups, real-time Jira tracking, and weekly live demos. Full transparency throughout — you see progress every single day, not just at the end. Code is reviewed, tested, and documented at every sprint.</p>
+                  <div class="wf-deliverables"><span>Deliverables:</span> Working Software, Sprint Reports, Code Repository</div>
+                  <div class="wf-duration">4–24 Weeks</div>
+                </div>
+              </div>
+              <div class="wf-step" data-step="04">
+                <div class="wf-connector"><div class="wf-line"></div><div class="wf-dot"></div></div>
+                <div class="wf-content">
+                  <div class="wf-header">
+                    <span class="wf-num">04</span>
+                    <h3>Quality Assurance</h3>
+                  </div>
+                  <p>Comprehensive testing across 20+ browsers and devices, automated regression testing, security penetration testing, performance audits (Lighthouse 95+ required), and accessibility compliance checks. Zero bugs reach production — that's our commitment.</p>
+                  <div class="wf-deliverables"><span>Deliverables:</span> QA Report, Security Audit, Performance Report</div>
+                  <div class="wf-duration">1–3 Weeks</div>
+                </div>
+              </div>
+              <div class="wf-step" data-step="05">
+                <div class="wf-connector"><div class="wf-line"></div><div class="wf-dot"></div></div>
+                <div class="wf-content">
+                  <div class="wf-header">
+                    <span class="wf-num">05</span>
+                    <h3>Launch & Scale</h3>
+                  </div>
+                  <p>Automated CI/CD deployment, cloud infrastructure setup, monitoring dashboards, analytics integration, and SEO/AEO optimisation. Post-launch, we provide 30 days of free support, then seamlessly transition to our maintenance plans for ongoing partnership.</p>
+                  <div class="wf-deliverables"><span>Deliverables:</span> Live Platform, Monitoring Setup, Documentation</div>
+                  <div class="wf-duration">1–2 Weeks</div>
+                </div>
+              </div>
+            </div>
+            <div class="workflow-sidebar" aria-hidden="true" style="position:relative; min-height: 420px;">
+              <canvas id="workflowCanvas" style="position:absolute;inset:0;width:100%;height:100%;z-index:0;opacity:0.35;pointer-events:none;"></canvas>
+              <div class="wf-sidebar-inner" style="position:relative; z-index:1;">
+                <div class="wf-sidebar-stat"><span class="wfss-num">40+</span><span class="wfss-label">Engineers & Designers</span></div>
+                <div class="wf-sidebar-stat"><span class="wfss-num">2-wk</span><span class="wfss-label">Sprint Cycle</span></div>
+                <div class="wf-sidebar-stat"><span class="wfss-num">0</span><span class="wfss-label">Missed Deadlines</span></div>
+                <div class="wf-sidebar-stat"><span class="wfss-num">100%</span><span class="wfss-label">Transparent Progress</span></div>
+                <div class="wf-cert-badge">
+                  <div class="wcb-icon">✦</div>
+                  <div>Agile Certified<br>Engineering Process</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════
+           07 · PORTFOLIO
+      ══════════════════════════════════════════ -->
+      <section id="portfolio" class="section portfolio-section" aria-labelledby="portfolioTitle">
+        <div class="container">
+          <div class="section-header center-header">
+            <span class="section-label">07 / PORTFOLIO</span>
+            <h2 id="portfolioTitle" class="section-title">Digital<br><span class="gradient-text">Masterworks</span></h2>
+            <p class="section-desc">A selection of products we've engineered that have transformed businesses and delighted millions of users.</p>
+          </div>
+          <div class="portfolio-grid">
+            <article class="portfolio-card" data-tilt data-cursor-text="View Project">
+              <div class="portfolio-device laptop-device">
+                <div class="ld-camera"></div>
+                <div class="device-screen">
+                  <div class="project-preview pp-ecom">
+                    <div class="pp-bar"><span></span><span></span><span></span></div>
+                    <div class="pp-hero-strip" style="background:linear-gradient(135deg,#0a0f2c,#1a0a3c)">
+                      <div class="pphs-text">
+                        <div style="width:70%;height:4px;background:#00e5ff;border-radius:2px;margin-bottom:8px"></div>
+                        <div style="width:50%;height:3px;background:rgba(255,255,255,0.2);border-radius:2px;margin-bottom:14px"></div>
+                        <div style="width:90px;height:22px;background:#7c3aed;border-radius:100px"></div>
+                      </div>
+                    </div>
+                    <div class="pp-product-grid">
+                      <div class="ppg-item" style="background:rgba(0,229,255,0.08)"></div>
+                      <div class="ppg-item" style="background:rgba(124,58,237,0.08)"></div>
+                      <div class="ppg-item" style="background:rgba(16,185,129,0.08)"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ld-base"></div>
+              </div>
+              <div class="portfolio-meta">
+                <div class="pm-tags"><span>Web</span><span>E-Commerce</span></div>
+                <h3>RetailEdge — E-Commerce Platform</h3>
+                <p>Full-stack marketplace with AI recommendations, real-time inventory, and multi-vendor support. 240% revenue increase post-launch.</p>
+                <div class="pm-tech"><span>React</span><span>Laravel</span><span>MySQL</span><span>Stripe</span></div>
+                <div class="pm-results">
+                  <div class="pmr-item"><span class="pmr-num">240%</span><span>Revenue Growth</span></div>
+                  <div class="pmr-item"><span class="pmr-num">35%</span><span>Less Abandonment</span></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="portfolio-card" data-tilt data-cursor-text="View Project">
+              <div class="portfolio-device phone-device">
+                <div class="pd-notch"></div>
+                <div class="device-screen">
+                  <div class="project-preview" style="background:linear-gradient(180deg,#030816 0%,#0d1333 100%);padding:16px 12px">
+                    <div class="pp-status-bar"><span>9:41</span><span>●●●</span></div>
+                    <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#00e5ff,#7c3aed);margin:12px auto 8px"></div>
+                    <div style="width:75%;height:8px;background:rgba(255,255,255,0.15);border-radius:4px;margin:0 auto 6px"></div>
+                    <div style="width:55%;height:6px;background:rgba(0,229,255,0.25);border-radius:4px;margin:0 auto 16px"></div>
+                    <div style="background:rgba(255,255,255,0.05);border-radius:12px;padding:12px">
+                      <div style="display:flex;gap:8px;margin-bottom:8px">
+                        <div style="flex:1;height:32px;background:rgba(0,229,255,0.1);border-radius:8px"></div>
+                        <div style="flex:1;height:32px;background:rgba(124,58,237,0.1);border-radius:8px"></div>
+                      </div>
+                      <div style="height:60px;background:linear-gradient(180deg,rgba(0,229,255,0.15) 0%,transparent 100%);border-radius:8px"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pd-home-bar"></div>
+              </div>
+              <div class="portfolio-meta">
+                <div class="pm-tags"><span>Mobile</span><span>FinTech</span></div>
+                <h3>CoinFlow — FinTech Mobile App</h3>
+                <p>Cross-platform Flutter app with real-time portfolio tracking, AI-powered spending insights, and bank-grade security. 50K downloads in 60 days.</p>
+                <div class="pm-tech"><span>Flutter</span><span>Firebase</span><span>Dart</span><span>Node.js</span></div>
+                <div class="pm-results">
+                  <div class="pmr-item"><span class="pmr-num">50K</span><span>Downloads/60 Days</span></div>
+                  <div class="pmr-item"><span class="pmr-num">4.8★</span><span>Play Store Rating</span></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="portfolio-card" data-tilt data-cursor-text="View Project">
+              <div class="portfolio-device laptop-device">
+                <div class="ld-camera"></div>
+                <div class="device-screen">
+                  <div class="project-preview pp-erp" style="background:#05110a;padding:0">
+                    <div class="pp-sidebar" style="width:48px;height:100%;background:#071a0e;border-right:1px solid rgba(16,185,129,0.1);float:left;display:flex;flex-direction:column;align-items:center;gap:12px;padding-top:16px">
+                      <div style="width:24px;height:24px;border-radius:6px;background:rgba(16,185,129,0.2)"></div>
+                      <div style="width:24px;height:24px;border-radius:6px;background:rgba(16,185,129,0.1)"></div>
+                      <div style="width:24px;height:24px;border-radius:6px;background:rgba(16,185,129,0.1)"></div>
+                    </div>
+                    <div style="margin-left:48px;padding:12px">
+                      <div style="display:flex;gap:8px;margin-bottom:10px">
+                        <div style="flex:1;background:rgba(16,185,129,0.1);border-radius:8px;padding:8px">
+                          <div style="font-size:8px;color:#10b981;font-family:monospace">REVENUE</div>
+                          <div style="font-size:14px;color:#10b981;font-weight:bold">₹48.2L</div>
+                        </div>
+                        <div style="flex:1;background:rgba(0,229,255,0.08);border-radius:8px;padding:8px">
+                          <div style="font-size:8px;color:#00e5ff;font-family:monospace">ORDERS</div>
+                          <div style="font-size:14px;color:#00e5ff;font-weight:bold">2,847</div>
+                        </div>
+                      </div>
+                      <div style="height:50px;background:linear-gradient(180deg,rgba(16,185,129,0.3) 0%,transparent 100%);border-radius:6px;border-bottom:1px solid #10b981"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ld-base"></div>
+              </div>
+              <div class="portfolio-meta">
+                <div class="pm-tags"><span>Enterprise</span><span>ERP</span></div>
+                <h3>ManufactureOS — ERP System</h3>
+                <p>Modular ERP with custom workflow engine, real-time analytics, and IoT integration for a 500-employee manufacturing firm. 40% reduction in operational costs.</p>
+                <div class="pm-tech"><span>Laravel</span><span>React</span><span>PostgreSQL</span><span>Docker</span></div>
+                <div class="pm-results">
+                  <div class="pmr-item"><span class="pmr-num">40%</span><span>Cost Reduction</span></div>
+                  <div class="pmr-item"><span class="pmr-num">500+</span><span>Users Daily</span></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="portfolio-card" data-tilt data-cursor-text="View Project">
+              <div class="portfolio-device phone-device">
+                <div class="pd-notch"></div>
+                <div class="device-screen">
+                  <div class="project-preview" style="background:linear-gradient(180deg,#0a0505,#1a0a0a);padding:16px 12px">
+                    <div class="pp-status-bar"><span>9:41</span><span>●●●</span></div>
+                    <div style="width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#ef4444,#f97316);margin:12px auto 8px;display:flex;align-items:center;justify-content:center;font-size:20px">🏥</div>
+                    <div style="width:75%;height:8px;background:rgba(255,255,255,0.15);border-radius:4px;margin:0 auto 16px"></div>
+                    <div style="background:rgba(239,68,68,0.08);border-radius:12px;padding:10px;margin-bottom:8px">
+                      <div style="font-size:8px;color:#ef4444;margin-bottom:4px">NEXT APPOINTMENT</div>
+                      <div style="height:12px;background:rgba(255,255,255,0.1);border-radius:4px;width:80%"></div>
+                    </div>
+                    <div style="display:flex;gap:8px">
+                      <div style="flex:1;height:40px;background:rgba(239,68,68,0.08);border-radius:8px"></div>
+                      <div style="flex:1;height:40px;background:rgba(249,115,22,0.08);border-radius:8px"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pd-home-bar"></div>
+              </div>
+              <div class="portfolio-meta">
+                <div class="pm-tags"><span>Mobile</span><span>Healthcare</span></div>
+                <h3>MedAssist — Healthcare App</h3>
+                <p>Patient management & telemedicine platform handling 10K+ daily consultations. AI-powered symptom checker with 94% diagnostic accuracy.</p>
+                <div class="pm-tech"><span>React Native</span><span>Node.js</span><span>MongoDB</span><span>OpenAI</span></div>
+                <div class="pm-results">
+                  <div class="pmr-item"><span class="pmr-num">10K</span><span>Daily Consultations</span></div>
+                  <div class="pmr-item"><span class="pmr-num">94%</span><span>AI Accuracy</span></div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="portfolio-cta">
+            <p>Want to see more of our work?</p>
+            <a href="#contact" class="btn btn-ghost" data-magnetic>Request Full Portfolio →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════
+           08 · INDUSTRIES
+      ══════════════════════════════════════════ -->
+      <section id="industries" class="section industries-section" aria-labelledby="industriesTitle">
+        <div class="container">
+          <div class="section-header center-header">
+            <span class="section-label">08 / INDUSTRIES</span>
+            <h2 id="industriesTitle" class="section-title">Industries We<br><span class="gradient-text">Transform</span></h2>
+          </div>
+          <div class="industries-marquee-wrap" aria-hidden="true">
+            <div class="industries-track">
+              <span class="ind-pill">Healthcare</span><span class="ind-pill">E-Commerce</span><span class="ind-pill">FinTech</span><span class="ind-pill">Education</span><span class="ind-pill">Real Estate</span><span class="ind-pill">Logistics</span><span class="ind-pill">Manufacturing</span><span class="ind-pill">Hospitality</span><span class="ind-pill">Legal Tech</span><span class="ind-pill">Retail</span><span class="ind-pill">InsurTech</span><span class="ind-pill">PropTech</span>
+              <span class="ind-pill">Healthcare</span><span class="ind-pill">E-Commerce</span><span class="ind-pill">FinTech</span><span class="ind-pill">Education</span><span class="ind-pill">Real Estate</span><span class="ind-pill">Logistics</span><span class="ind-pill">Manufacturing</span><span class="ind-pill">Hospitality</span><span class="ind-pill">Legal Tech</span><span class="ind-pill">Retail</span><span class="ind-pill">InsurTech</span><span class="ind-pill">PropTech</span>
+            </div>
+          </div>
+          <div class="industries-grid">
+            <div class="ind-card" data-reveal data-tilt><div class="ind-icon">🏥</div><div class="ind-info"><h4>Healthcare</h4><p>EMR systems, telemedicine, AI diagnostics, patient portals</p></div></div>
+            <div class="ind-card" data-reveal data-tilt><div class="ind-icon">🛒</div><div class="ind-info"><h4>E-Commerce</h4><p>Storefronts, marketplaces, inventory, AI recommendations</p></div></div>
+            <div class="ind-card" data-reveal data-tilt><div class="ind-icon">💳</div><div class="ind-info"><h4>FinTech</h4><p>Payment platforms, banking apps, investment tools, KYC</p></div></div>
+            <div class="ind-card" data-reveal data-tilt><div class="ind-icon">📚</div><div class="ind-info"><h4>Education</h4><p>LMS, e-learning, virtual classrooms, student portals</p></div></div>
+            <div class="ind-card" data-reveal data-tilt><div class="ind-icon">🏢</div><div class="ind-info"><h4>Real Estate</h4><p>Property listings, CRM, virtual tours, agent platforms</p></div></div>
+            <div class="ind-card" data-reveal data-tilt><div class="ind-icon">🚚</div><div class="ind-info"><h4>Logistics</h4><p>Fleet tracking, route optimisation, warehouse management</p></div></div>
+            <div class="ind-card" data-reveal data-tilt><div class="ind-icon">🏭</div><div class="ind-info"><h4>Manufacturing</h4><p>ERP, production planning, quality control, IoT integration</p></div></div>
+            <div class="ind-card" data-reveal data-tilt><div class="ind-icon">⚖️</div><div class="ind-info"><h4>Legal Tech</h4><p>Case management, document automation, client portals</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════
+           09 · WHY CHOOSE ZIBRIN
+      ══════════════════════════════════════════ -->
+      <section id="why" class="section why-section" aria-labelledby="whyTitle">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">09 / WHY ZIBRIN</span>
+            <h2 id="whyTitle" class="section-title">Not Just Developers.<br><span class="gradient-text">Digital Engineers.</span></h2>
+          </div>
+          <div class="why-layout">
+            <div class="why-cards-col">
+              <div class="why-card" data-reveal data-tilt>
+                <div class="wc-icon">◈</div>
+                <div class="wc-num">01</div>
+                <h3>Engineering-First Culture</h3>
+                <p>We obsess over performance, scalability, and architecture before a single line of code is written. Our senior engineers review every project at every stage — no exceptions.</p>
+              </div>
+              <div class="why-card" data-reveal data-tilt>
+                <div class="wc-icon">◈</div>
+                <div class="wc-num">02</div>
+                <h3>Full-Stack Ownership</h3>
+                <p>Design → Development → Deployment → Maintenance. One team. One contract. No handoffs, no communication gaps, no responsibility gaps. We own the outcome, not just the deliverable.</p>
+              </div>
+              <div class="why-card" data-reveal data-tilt>
+                <div class="wc-icon">◈</div>
+                <div class="wc-num">03</div>
+                <h3>Radical Transparency</h3>
+                <p>Real-time Jira dashboards, daily progress updates, weekly live demos, and a dedicated Slack channel. You see every commit, every decision, every milestone as it happens.</p>
+              </div>
+              <div class="why-card" data-reveal data-tilt>
+                <div class="wc-icon">◈</div>
+                <div class="wc-num">04</div>
+                <h3>AI-Native Studio</h3>
+                <p>We've already integrated AI into our own development workflows — code review, testing, documentation, and design — making us 3× faster and more precise than traditional studios.</p>
+              </div>
+            </div>
+            <div class="why-big-card" data-reveal>
+              <div class="wbc-label">OUR PROMISE</div>
+              <h3 class="wbc-title">Results Over<br>Deliverables.</h3>
+              <p>We don't measure success in files delivered or lines of code written. We measure it in your business outcomes: conversion rates, user retention, operational efficiency, and revenue growth.</p>
+              <p>If your product doesn't perform the way we promised, we fix it — no charge, no argument.</p>
+              <div class="wbc-stats">
+                <div class="wbcs-item"><span class="wbcs-num">98%</span><small>Client Satisfaction</small></div>
+                <div class="wbcs-item"><span class="wbcs-num">0</span><small>Missed Deadlines</small></div>
+                <div class="wbcs-item"><span class="wbcs-num">30</span><small>Days Free Support</small></div>
+              </div>
+              <a href="#contact" class="btn btn-primary" data-magnetic>Start Working Together →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════
+           10 · SEO + AEO + GEO
+      ══════════════════════════════════════════ -->
+      <section id="seo-viz" class="section seo-section" aria-labelledby="seoTitle">
+        <div class="container">
+          <div class="section-header center-header">
+            <span class="section-label">10 / SEARCH DOMINANCE</span>
+            <h2 id="seoTitle" class="section-title">Be Found<br><span class="gradient-text">Everywhere</span></h2>
+            <p class="section-desc">The search landscape has fundamentally changed. You need to be visible across traditional search engines, voice assistants, and AI-powered discovery engines simultaneously.</p>
+          </div>
+          <div class="seo-universe-wrap" style="position:relative; min-height: 420px; display:flex; justify-content:center; align-items:center;">
+            <canvas id="seoCanvas" style="position:absolute; inset:0; width:100%; height:100%; z-index:0; pointer-events:none;"></canvas>
+            <div class="seo-universe" style="position:relative; z-index:1; pointer-events:none; border:none; background:none;">
+              <div class="seo-hub" style="transform:none; margin:auto;"><div class="seo-hub-inner">ZIBRIN<br>CORE</div></div>
+            </div>
+          </div>
+          <div class="seo-cards">
+            <div class="seo-card" data-reveal>
+              <div class="seo-card-badge" style="color:#00e5ff;border-color:rgba(0,229,255,0.3)">SEO</div>
+              <h3>Search Engine Optimisation</h3>
+              <p>We engineer your technical foundation, content architecture, and backlink profile to dominate Google and Bing rankings for high-intent keywords that bring converting traffic — not just visitors.</p>
+              <ul class="seo-list">
+                <li>Technical SEO & Core Web Vitals</li>
+                <li>Keyword strategy & content mapping</li>
+                <li>On-page and off-page optimisation</li>
+                <li>Local SEO & Google Business</li>
+              </ul>
+              <div class="seo-result">Page #1 rankings in 60–90 days</div>
+            </div>
+            <div class="seo-card" data-reveal>
+              <div class="seo-card-badge" style="color:#7c3aed;border-color:rgba(124,58,237,0.3)">AEO</div>
+              <h3>Answer Engine Optimisation</h3>
+              <p>Voice search, Google SGE, and AI-generated answer boxes are replacing traditional rankings. AEO positions your brand as the authoritative source that search engines cite when answering questions directly.</p>
+              <ul class="seo-list">
+                <li>Schema markup & structured data</li>
+                <li>Featured snippet optimisation</li>
+                <li>Voice search readiness</li>
+                <li>Google SGE positioning</li>
+              </ul>
+              <div class="seo-result" style="--rc:#7c3aed">Featured in AI Overview answers</div>
+            </div>
+            <div class="seo-card" data-reveal>
+              <div class="seo-card-badge" style="color:#10b981;border-color:rgba(16,185,129,0.3)">GEO</div>
+              <h3>Generative Engine Optimisation</h3>
+              <p>ChatGPT, Gemini, Claude, and Perplexity are where your next customers are searching. GEO is the emerging discipline of making AI language models recommend your brand by name when users ask relevant questions.</p>
+              <ul class="seo-list">
+                <li>AI citation strategy</li>
+                <li>Brand entity building</li>
+                <li>E-E-A-T content engineering</li>
+                <li>ChatGPT & Gemini optimisation</li>
+              </ul>
+              <div class="seo-result" style="--rc:#10b981">Cited by ChatGPT & Gemini</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════
+           11 · CLOUD INFRASTRUCTURE
+      ══════════════════════════════════════════ -->
+      <section id="cloud" class="section cloud-section" aria-labelledby="cloudTitle">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">11 / INFRASTRUCTURE</span>
+            <h2 id="cloudTitle" class="section-title">Cloud-Native<br><span class="gradient-text">Architecture</span></h2>
+            <p class="section-sub-desc">We design infrastructure that performs at any scale with 99.9% uptime — so your business never misses a beat.</p>
+          </div>
+          <div class="cloud-diagram-v2" style="position:relative;">
+            <canvas id="cloudCanvas" style="position:absolute; inset:0; width:100%; height:100%; z-index:0; opacity:0.35; pointer-events:none;"></canvas>
+            <div class="cdv2-layer" data-layer="cdn">
+              <div class="cdv2-label"><span class="cdv2-badge" style="color:#00e5ff">LAYER 1</span> CDN & Security</div>
+              <div class="cdv2-nodes">
+                <div class="cdv2-node"><div class="cnd-icon">🌐</div><span>Cloudflare CDN</span><small>Global Edge Network</small></div>
+                <div class="cdv2-node"><div class="cnd-icon">🛡</div><span>DDoS Shield</span><small>Automatic Mitigation</small></div>
+                <div class="cdv2-node"><div class="cnd-icon">🔒</div><span>WAF</span><small>Web App Firewall</small></div>
+                <div class="cdv2-node"><div class="cnd-icon">🔑</div><span>SSL/TLS</span><small>End-to-End Encryption</small></div>
+              </div>
+            </div>
+            <div class="cdv2-arrow-row"><div class="cda">↓</div><div class="cda">↓</div><div class="cda">↓</div><div class="cda">↓</div></div>
+            <div class="cdv2-layer" data-layer="app">
+              <div class="cdv2-label"><span class="cdv2-badge" style="color:#7c3aed">LAYER 2</span> Application Layer</div>
+              <div class="cdv2-nodes">
+                <div class="cdv2-node"><div class="cnd-icon">⚖</div><span>Load Balancer</span><small>Auto Traffic Distribution</small></div>
+                <div class="cdv2-node"><div class="cnd-icon">⚙</div><span>App Servers</span><small>Containerised (Docker)</small></div>
+                <div class="cdv2-node"><div class="cnd-icon">🔗</div><span>API Gateway</span><small>Rate Limiting & Auth</small></div>
+                <div class="cdv2-node"><div class="cnd-icon">📦</div><span>Microservices</span><small>Kubernetes Orchestration</small></div>
+              </div>
+            </div>
+            <div class="cdv2-arrow-row"><div class="cda">↓</div><div class="cda">↓</div><div class="cda">↓</div><div class="cda">↓</div></div>
+            <div class="cdv2-layer" data-layer="data">
+              <div class="cdv2-label"><span class="cdv2-badge" style="color:#10b981">LAYER 3</span> Data Layer</div>
+              <div class="cdv2-nodes">
+                <div class="cdv2-node"><div class="cnd-icon">🗄</div><span>Primary DB</span><small>MySQL / PostgreSQL</small></div>
+                <div class="cdv2-node"><div class="cnd-icon">⚡</div><span>Redis Cache</span><small>Sub-ms Response Times</small></div>
+                <div class="cdv2-node"><div class="cnd-icon">☁</div><span>S3 Storage</span><small>Scalable Media Storage</small></div>
+                <div class="cdv2-node"><div class="cnd-icon">💾</div><span>Daily Backups</span><small>Point-in-Time Recovery</small></div>
+              </div>
+            </div>
+          </div>
+          <div class="cloud-guarantees">
+            <div class="cg-item"><span class="cg-val">99.9%</span><span>Uptime SLA</span></div>
+            <div class="cg-item"><span class="cg-val">&lt;100ms</span><span>Global Response</span></div>
+            <div class="cg-item"><span class="cg-val">∞</span><span>Auto-Scaling</span></div>
+            <div class="cg-item"><span class="cg-val">24/7</span><span>Monitoring</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════
+           12 · AI SHOWCASE
+      ══════════════════════════════════════════ -->
+      <section id="ai-showcase" class="section ai-section" aria-labelledby="aiTitle">
+        <div class="container">
+          <div class="section-header center-header">
+            <span class="section-label">12 / AI CAPABILITIES</span>
+            <h2 id="aiTitle" class="section-title">Your Business.<br><span class="gradient-text">Supercharged by AI.</span></h2>
+            <p class="section-desc">We're not just integrating AI — we're reimagining what's possible when artificial intelligence meets engineering excellence.</p>
+          </div>
+          <div class="ai-layout">
+            <div class="ai-chat-col">
+              <div class="ai-chat-demo" style="position:relative;">
+                <canvas id="aiCanvas" style="position:absolute;inset:0;width:100%;height:100%;z-index:0;opacity:0.35;pointer-events:none;"></canvas>
+                <div class="ai-chat-header" style="position:relative;z-index:1;">
+                  <div class="ai-status-dot"></div>
+                  <span>Zibrin AI — Powered by GPT-4</span>
+                  <div class="ai-header-badge">LIVE DEMO</div>
+                </div>
+                <div class="ai-chat-body" id="aiChatBody">
+                  <div class="ai-msg bot">Hello! I'm your AI assistant, powered by Zibrin Intelligence and trained on your entire business knowledge base. How can I help grow your business today?</div>
+                  <div class="ai-msg user">Can you analyse our website performance and suggest improvements?</div>
+                  <div class="ai-msg bot" id="aiThinking">
+                    <span class="ai-dot"></span><span class="ai-dot"></span><span class="ai-dot"></span>
+                  </div>
+                  <div class="ai-msg bot" id="aiResponse" style="display:none">
+                    ✦ Analysing your domain via Lighthouse API...<br><br>
+                    <strong>Issues Found:</strong><br>
+                    • LCP: 4.2s → Target: &lt;2.5s<br>
+                    • Unoptimised images (14 found)<br>
+                    • Render-blocking JS on critical path<br><br>
+                    <strong>Recommended Actions:</strong><br>
+                    1. Implement Next-Gen image formats (WebP)<br>
+                    2. Defer non-critical JavaScript<br>
+                    3. Add Cloudflare CDN edge caching<br><br>
+                    Projected improvement: <strong style="color:#10b981">+68% performance score</strong>
+                  </div>
+                </div>
+                <div class="ai-chat-input">
+                  <input type="text" placeholder="Ask your AI assistant anything..." aria-label="Chat input" readonly />
+                  <button aria-label="Send" type="button">→</button>
+                </div>
+              </div>
+            </div>
+            <div class="ai-caps-col">
+              <div class="ai-cap-card" data-reveal>
+                <div class="aicc-icon">🔮</div>
+                <div class="aicc-body">
+                  <h4>Predictive Analytics</h4>
+                  <p>AI models that forecast sales, churn, and demand with 90%+ accuracy — so you make decisions before problems arise.</p>
+                </div>
+              </div>
+              <div class="ai-cap-card" data-reveal>
+                <div class="aicc-icon">💬</div>
+                <div class="aicc-body">
+                  <h4>Intelligent Chatbots</h4>
+                  <p>Custom-trained GPT-4 assistants that handle support, sales, and onboarding — available in 50+ languages, 24/7.</p>
+                </div>
+              </div>
+              <div class="ai-cap-card" data-reveal>
+                <div class="aicc-icon">⚙️</div>
+                <div class="aicc-body">
+                  <h4>Process Automation</h4>
+                  <p>Eliminate repetitive manual workflows with AI that reads, classifies, routes, and acts on data automatically.</p>
+                </div>
+              </div>
+              <div class="ai-cap-card" data-reveal>
+                <div class="aicc-icon">📊</div>
+                <div class="aicc-body">
+                  <h4>Business Intelligence</h4>
+                  <p>AI dashboards that surface insights hidden in your data and recommend actions in plain English.</p>
+                </div>
+              </div>
+              <div class="ai-cap-card" data-reveal>
+                <div class="aicc-icon">✍️</div>
+                <div class="aicc-body">
+                  <h4>Content Intelligence</h4>
+                  <p>AI-powered content generation, SEO optimisation, and personalisation at scale — for every user, every time.</p>
+                </div>
+              </div>
+              <div class="ai-cap-card" data-reveal>
+                <div class="aicc-icon">🔒</div>
+                <div class="aicc-body">
+                  <h4>AI Security</h4>
+                  <p>Anomaly detection, fraud prevention, and threat intelligence powered by machine learning — protection that learns.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════
+           12b · CYBER SECURITY
+      ══════════════════════════════════════════ -->
+      <section id="security" class="section security-section" aria-labelledby="securityTitle">
+        <div class="container">
+          <div class="security-inner" style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;">
+            <div class="security-left">
+              <span class="section-label">12b / CYBER SECURITY</span>
+              <h2 id="securityTitle" class="section-title">Zero Trust.<br><span class="gradient-text">Absolute Shield.</span></h2>
+              <p class="section-desc">Our software ecosystems are engineered with a security-first posture. We protect your enterprise assets, transaction flows, and database endpoints against sophisticated threat vectors using active machine-learning firewalls and continuous intrusion scanning.</p>
+              <ul class="svc-benefits-list" style="display:flex; flex-direction:column; gap:12px; margin-top:24px;">
+                <li style="font-size:14px; color:var(--white-70); position:relative; padding-left:18px;"><strong style="color:var(--electric-cyan);">Network Firewall:</strong> WAF rules filtering and neutralizing threat inputs in real time.</li>
+                <li style="font-size:14px; color:var(--white-70); position:relative; padding-left:18px;"><strong style="color:var(--electric-cyan);">Encrypted Vaults:</strong> Secure database vaults protected by end-to-end AES-256 standards.</li>
+                <li style="font-size:14px; color:var(--white-70); position:relative; padding-left:18px;"><strong style="color:var(--electric-cyan);">Continuous Scans:</strong> Automated pen-testing sweeps protecting container environments.</li>
+              </ul>
+            </div>
+            <div class="security-right" style="position:relative; min-height:400px; display:flex; justify-content:center; align-items:center;">
+              <canvas id="securityCanvas" style="position:absolute; inset:0; width:100%; height:100%; z-index:0;"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════
+           13 · TESTIMONIALS
+      ══════════════════════════════════════════ -->
+      <section id="testimonials" class="section testimonials-section" aria-labelledby="testimonialsTitle">
+        <div class="container">
+          <div class="section-header center-header">
+            <span class="section-label">13 / TESTIMONIALS</span>
+            <h2 id="testimonialsTitle" class="section-title">Words From<br><span class="gradient-text">Our Clients</span></h2>
+          </div>
+          <div class="testimonials-grid">
+            <blockquote class="tcard featured-tcard" data-reveal>
+              <div class="tcard-stars">★★★★★</div>
+              <p class="tcard-quote">"Zibrin didn't just build our platform — they reimagined how our entire business operates digitally. 3 months after launch, revenue was up 240% and our team's productivity doubled. They're not vendors. They're strategic partners."</p>
+              <footer>
+                <div class="tcard-avatar" style="background:linear-gradient(135deg,#00e5ff,#7c3aed)">AM</div>
+                <div class="tcard-info"><cite>Arjun Mehta</cite><span>CEO, RetailEdge India</span></div>
+              </footer>
+            </blockquote>
+            <blockquote class="tcard" data-reveal>
+              <div class="tcard-stars">★★★★★</div>
+              <p class="tcard-quote">"The AI chatbot Zibrin built handles 80% of our support tickets autonomously. It paid for itself in the first month and keeps getting smarter. Genuinely transformative for our customer experience."</p>
+              <footer>
+                <div class="tcard-avatar" style="background:linear-gradient(135deg,#7c3aed,#10b981)">SP</div>
+                <div class="tcard-info"><cite>Sneha Patel</cite><span>CTO, MedAssist</span></div>
+              </footer>
+            </blockquote>
+            <blockquote class="tcard" data-reveal>
+              <div class="tcard-stars">★★★★★</div>
+              <p class="tcard-quote">"Their Flutter app reached 50,000 downloads in 60 days and maintained a 4.8-star rating. The quality, performance, and attention to detail was exceptional. Best investment we've made."</p>
+              <footer>
+                <div class="tcard-avatar" style="background:linear-gradient(135deg,#10b981,#00e5ff)">RS</div>
+                <div class="tcard-info"><cite>Rahul Singh</cite><span>Founder, LogiTrack</span></div>
+              </footer>
+            </blockquote>
+            <blockquote class="tcard" data-reveal>
+              <div class="tcard-stars">★★★★★</div>
+              <p class="tcard-quote">"Zibrin's SEO strategy took us from page 5 to position #1 for our primary keywords in 4 months. Organic traffic increased 320%. They understand the new world of AI search better than anyone."</p>
+              <footer>
+                <div class="tcard-avatar" style="background:linear-gradient(135deg,#00e5ff,#10b981)">PN</div>
+                <div class="tcard-info"><cite>Priya Nair</cite><span>Marketing Director, EduSphere</span></div>
+              </footer>
+            </blockquote>
+            <blockquote class="tcard" data-reveal>
+              <div class="tcard-stars">★★★★★</div>
+              <p class="tcard-quote">"We needed an ERP in 6 months that 3 other agencies said would take 18. Zibrin delivered it in 5 months, under budget, with zero compromises. The system handles our entire manufacturing operation for 500+ employees."</p>
+              <footer>
+                <div class="tcard-avatar" style="background:linear-gradient(135deg,#7c3aed,#00e5ff)">VK</div>
+                <div class="tcard-info"><cite>Vijay Kumar</cite><span>MD, PrecisionTech Industries</span></div>
+              </footer>
+            </blockquote>
+            <blockquote class="tcard" data-reveal>
+              <div class="tcard-stars">★★★★★</div>
+              <p class="tcard-quote">"The level of transparency and communication at Zibrin is unmatched. Daily updates, real-time Jira access, weekly demos — I've never felt more in control of a software project. Delivered exactly on time and spec."</p>
+              <footer>
+                <div class="tcard-avatar" style="background:linear-gradient(135deg,#10b981,#7c3aed)">RA</div>
+                <div class="tcard-info"><cite>Reena Agarwal</cite><span>COO, SwiftPay</span></div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════
+           14 · FAQ
+      ══════════════════════════════════════════ -->
+      <section id="faq" class="section faq-section" aria-labelledby="faqTitle">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">14 / FAQ</span>
+            <h2 id="faqTitle" class="section-title">Frequently<br><span class="gradient-text">Asked Questions</span></h2>
+          </div>
+          <div class="faq-layout">
+            <div class="faq-list">
+              <details class="faq-item" data-reveal>
+                <summary class="faq-q">How long does a typical project take?<span class="faq-icon" aria-hidden="true">+</span></summary>
+                <div class="faq-a">Timelines vary by project complexity. A standard website: 4–8 weeks. Mobile apps: 8–20 weeks. Complex ERP/CRM systems: 12–32 weeks. We provide a precise, phased timeline after our discovery workshop, with fixed milestones and delivery dates you can plan around.</div>
+              </details>
+              <details class="faq-item" data-reveal>
+                <summary class="faq-q">Do you offer post-launch maintenance?<span class="faq-icon" aria-hidden="true">+</span></summary>
+                <div class="faq-a">Yes. Every project includes 30 days of free post-launch support. Beyond that, we offer three maintenance plan tiers: Essential (security updates & monitoring), Growth (feature additions & optimisation), and Enterprise (dedicated engineer, SLA-backed support, priority response). We never abandon a product after launch.</div>
+              </details>
+              <details class="faq-item" data-reveal>
+                <summary class="faq-q">Can you integrate AI into our existing systems?<span class="faq-icon" aria-hidden="true">+</span></summary>
+                <div class="faq-a">Absolutely. We specialise in retrofitting AI into existing products — adding GPT-powered chatbots, automating workflows, building recommendation engines, or implementing predictive analytics. We assess your existing stack, identify integration points, and implement AI capabilities without disrupting your current operations.</div>
+              </details>
+              <details class="faq-item" data-reveal>
+                <summary class="faq-q">What is your project management approach?<span class="faq-icon" aria-hidden="true">+</span></summary>
+                <div class="faq-a">We use Agile methodology with 2-week sprints. Every client gets: a dedicated Project Manager, real-time access to our Jira project board, a private Slack channel, weekly video call demos of working software, and daily automated progress summaries. You're never in the dark about where your project stands.</div>
+              </details>
+              <details class="faq-item" data-reveal>
+                <summary class="faq-q">How do you handle security and data privacy?<span class="faq-icon" aria-hidden="true">+</span></summary>
+                <div class="faq-a">Security is never an afterthought at Zibrin. Every project includes: SSL/TLS encryption, OWASP security guidelines, penetration testing, role-based access control, GDPR compliance architecture, encrypted database storage, and secure API authentication. We also conduct a security audit before every launch.</div>
+              </details>
+              <details class="faq-item" data-reveal>
+                <summary class="faq-q">Do you work with international clients?<span class="faq-icon" aria-hidden="true">+</span></summary>
+                <div class="faq-a">Yes. We serve clients across India, the UK, USA, UAE, Canada, Australia, and Europe. We accommodate timezone-flexible communication, international payment methods (wire transfer, Wise, PayPal, crypto), cross-currency billing, and multilingual project documentation upon request.</div>
+              </details>
+              <details class="faq-item" data-reveal>
+                <summary class="faq-q">What happens if the project goes over budget or timeline?<span class="faq-icon" aria-hidden="true">+</span></summary>
+                <div class="faq-a">We've never missed a delivery deadline in 8 years of operation. We provide fixed-price contracts for defined scope — so your budget is protected. For scope changes requested mid-project, we issue a clear change order with timeline and cost impact before any work begins. No surprises, ever.</div>
+              </details>
+              <details class="faq-item" data-reveal>
+                <summary class="faq-q">Can you build and deploy on Play Store and App Store?<span class="faq-icon" aria-hidden="true">+</span></summary>
+                <div class="faq-a">Yes, completely. We handle the full deployment pipeline including: Google Developer Account setup, Apple Developer Program enrolment, store listing optimisation (ASO), screenshot design, app review submissions, and post-launch monitoring. We've deployed 80+ apps successfully across both platforms.</div>
+              </details>
+            </div>
+            <div class="faq-sidebar">
+              <div class="faq-cta-card">
+                <div class="fcc-icon">💬</div>
+                <h3>Still Have Questions?</h3>
+                <p>Our team responds within 2 hours on business days. Book a free 30-minute consultation call and get all your questions answered by a senior engineer.</p>
+                <a href="#contact" class="btn btn-primary btn-full">Book Free Consultation</a>
+                <div class="fcc-or">or</div>
+                <a href="mailto:hello@zibrin.com" class="fcc-email">hello@zibrin.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════
+           15 · CONTACT — MISSION CONTROL
+      ══════════════════════════════════════════ -->
+      <section id="contact" class="section contact-section" aria-labelledby="contactTitle">
+        <canvas id="contactCanvas" aria-hidden="true"></canvas>
+        <div class="container contact-container">
+          <div class="contact-inner">
+            <div class="contact-left">
+              <span class="section-label">15 / MISSION CONTROL</span>
+              <h2 id="contactTitle" class="section-title">Ready to<br><span class="gradient-text">Launch?</span></h2>
+              <p class="contact-sub">Tell us about your project. We'll respond within 2 hours with a tailored technical brief and initial approach — no generic proposals, no time-wasting.</p>
+              <div class="contact-info-items">
+                <div class="cii-item">
+                  <div class="cii-icon">✉</div>
+                  <div>
+                    <span class="cii-label">Email Us</span>
+                    <a href="mailto:hello@zibrin.com">hello@zibrin.com</a>
+                  </div>
+                </div>
+                <div class="cii-item">
+                  <div class="cii-icon">📞</div>
+                  <div>
+                    <span class="cii-label">Call Us</span>
+                    <a href="tel:+910000000000">+91 000 000 0000</a>
+                  </div>
+                </div>
+                <div class="cii-item">
+                  <div class="cii-icon">📍</div>
+                  <div>
+                    <span class="cii-label">Location</span>
+                    <span>India · Serving Globally</span>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-social">
+                <a href="#" class="social-link" data-magnetic aria-label="LinkedIn">in</a>
+                <a href="#" class="social-link" data-magnetic aria-label="Twitter">𝕏</a>
+                <a href="#" class="social-link" data-magnetic aria-label="Instagram">ig</a>
+                <a href="#" class="social-link" data-magnetic aria-label="GitHub">gh</a>
+              </div>
+            </div>
+            <div class="contact-right">
+              <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contactName">Full Name <span aria-hidden="true">*</span></label>
+                    <input type="text" id="contactName" name="name" placeholder="Arjun Mehta" required autocomplete="name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="contactEmail">Email Address <span aria-hidden="true">*</span></label>
+                    <input type="email" id="contactEmail" name="email" placeholder="you@company.com" required autocomplete="email" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contactPhone">Phone Number</label>
+                    <input type="tel" id="contactPhone" name="phone" placeholder="+91 98765 43210" autocomplete="tel" />
+                  </div>
+                  <div class="form-group">
+                    <label for="contactCompany">Company Name</label>
+                    <input type="text" id="contactCompany" name="company" placeholder="Your Company Ltd." autocomplete="organization" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contactService">Service Required</label>
+                    <select id="contactService" name="service">
+                      <option value="">Select a Service</option>
+                      <option>Website Development</option>
+                      <option>E-Commerce Development</option>
+                      <option>Mobile App (Flutter/React Native)</option>
+                      <option>Android App Development</option>
+                      <option>AI Chatbot Development</option>
+                      <option>OpenAI Integration</option>
+                      <option>Custom Software / ERP / CRM</option>
+                      <option>SEO / AEO / GEO</option>
+                      <option>Cloud Deployment</option>
+                      <option>UI/UX Design</option>
+                      <option>API Development / Integration</option>
+                      <option>Database Management</option>
+                      <option>Web Scraping / Data Collection</option>
+                      <option>Website Maintenance</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="contactBudget">Estimated Budget</label>
+                    <select id="contactBudget" name="budget">
+                      <option value="">Select Budget Range</option>
+                      <option>Under ₹50,000</option>
+                      <option>₹50,000 – ₹2,00,000</option>
+                      <option>₹2,00,000 – ₹10,00,000</option>
+                      <option>₹10,00,000 – ₹50,00,000</option>
+                      <option>₹50,00,000+</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group full-width">
+                  <label for="contactMessage">Project Brief <span aria-hidden="true">*</span></label>
+                  <textarea id="contactMessage" name="message" rows="5" placeholder="Describe your project — what you're building, who it's for, your goals, timeline, and any specific requirements..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-launch" data-magnetic>
+                  <span>Initiate Mission</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5,12h14M12,5l7,7-7,7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <p class="form-note">We respond within 2 hours on business days. Your data is never shared.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── Footer ─── -->
+      <footer class="site-footer" role="contentinfo" style="position:relative;">
+        <canvas id="footerCanvas" style="position:absolute;inset:0;width:100%;height:100%;z-index:0;opacity:0.45;pointer-events:none;"></canvas>
+        <div class="container footer-inner">
+          <div class="footer-brand-col">
+            <div class="footer-logo">
+              <svg viewBox="0 0 100 100" width="40" height="40" aria-hidden="true">
+                <defs>
+                  <linearGradient id="footerLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#00e5ff" />
+                    <stop offset="50%" stop-color="#7c3aed" />
+                    <stop offset="100%" stop-color="#10b981" />
+                  </linearGradient>
+                </defs>
+                <path d="M 22,65 C 10,55 10,35 22,25 C 34,15 46,32 54,48 C 62,64 74,75 84,65 C 94,55 94,35 84,25 C 76,17 64,17 56,25 L 88,15 M 88,15 L 75,17 M 88,15 L 85,27" fill="none" stroke="url(#footerLogoGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div>
+                <span class="footer-brand-name">ZIBRIN</span>
+                <span class="footer-brand-sub">INFOTECH</span>
+              </div>
+            </div>
+            <p class="footer-tagline">Engineering Tomorrow's<br>Digital Future.</p>
+            <p class="footer-desc">Premium software engineering studio crafting digital experiences that define industries. Based in India, serving the world.</p>
+          </div>
+          <div class="footer-links-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Website Development</a></li>
+              <li><a href="#services">E-Commerce</a></li>
+              <li><a href="#services">Mobile Apps</a></li>
+              <li><a href="#services">AI Integration</a></li>
+              <li><a href="#services">ERP / CRM</a></li>
+              <li><a href="#services">SEO / AEO / GEO</a></li>
+              <li><a href="#services">Cloud & DevOps</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Zibrin</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#workflow">Our Process</a></li>
+              <li><a href="#stack">Tech Stack</a></li>
+              <li><a href="#why">Why Zibrin</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-col">
+            <h4>Connect</h4>
+            <div class="footer-social">
+              <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+              <a href="#" class="social-link" aria-label="Twitter / X">𝕏</a>
+              <a href="#" class="social-link" aria-label="Instagram">ig</a>
+              <a href="#" class="social-link" aria-label="GitHub">gh</a>
+            </div>
+            <div class="footer-contact-quick">
+              <a href="mailto:hello@zibrin.com">hello@zibrin.com</a>
+              <a href="tel:+910000000000">+91 000 000 0000</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2025 Zibrin Infotech. All rights reserved.</span>
+          <span class="footer-bottom-right">Engineering Excellence. Always.</span>
+        </div>
+      </footer>
+
+    </div><!-- /smooth-content -->
+  </main>
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
